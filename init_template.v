@@ -26,7 +26,7 @@ assign ap_start = ap_rst_n;
 // busy
 (* mark_debug = "true" *) wire [31:0] busy_A;
 
-spk_packet_0 spk_packet_tx (
+spk_packet_tx_0 spk_packet_tx (
   .ap_clk           (clk              ), // input wire ap_clk
   .ap_rst_n         (ap_rst_n         ), // input wire ap_rst_n
   
