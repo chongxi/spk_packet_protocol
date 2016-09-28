@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sat Sep 24 16:24:32 2016
+# Process ID: 4497
+# Current directory: /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/xsim.dir/spk_packet_rx/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/webtalk.log
+# Journal file: /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/xsim.dir/spk_packet_rx/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep 24 16:24:32 2016...

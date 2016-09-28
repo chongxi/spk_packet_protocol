@@ -1,0 +1,7 @@
+Running: xsim.dir/spk_packet_tx/xsimk -simmode gui -wdb spk_packet_tx.wdb -simrunnum 0 -socket 45115
+Design successfully loaded
+Design Loading Memory Usage: 118140 KB (Peak: 132552 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 212172 KB (Peak: 265412 KB)
+Simulation CPU Usage: 20670 ms

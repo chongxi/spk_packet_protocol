@@ -1,6 +1,6 @@
 #include <iostream>
 #include <ap_fixed.h>
-#include "spk_packet.h"
+#include "spk_packet_tx.h"
 #include <math.h>
 #include "stdio.h"
 #include "ap_utils.h"
@@ -8,10 +8,12 @@ using namespace std;
 
 int main()
 {
-	int t, ch, i;
+	int t, ch;
+	ap_data i;
 	i = 0;
 	hls::stream<mua_struct> mua_stream;
 	hls::stream<spk_struct> pre_stream, post_stream;
+	hls::stream<int> time_stamp;
 	mua_struct mua;
 	spk_struct spk_pre, spk_post;
 	ap_uint<32> busy;
@@ -20,13 +22,13 @@ int main()
 	for(t=0; t<10*T; t++)
 		for(ch=0; ch<CH; ch++)
 		{
-			if(t==13 && ch==2){
+			if(t==8 && ch==5){
 				mua.data = i;
-				mua.data[0] = 1;
+				mua.data[32] = 1;
 			}
-			else if(t==15 && ch==3){
+			else if(t==21 && ch==26){
 				mua.data = i;
-				mua.data[0] = 1;
+				mua.data[32] = 1;
 			}
 			else{
 				mua.data = i;
@@ -34,7 +36,7 @@ int main()
 			mua.id  = ch;
 			mua.user   = t;
 			mua_stream.write(mua);
-			spk_packet(mua_stream, pre_stream, post_stream, &busy);
+			spk_packet_tx(mua_stream, pre_stream, post_stream, time_stamp, &busy);
 			i++;
 		}
 
@@ -62,6 +64,10 @@ int main()
 		printf("ch=%d, pts=%d, post=%d, busy=%d, last=%d\n", ch, pts, post_test[i], busy[ch].to_bool(), last);
 	}
 
+	while(!time_stamp.empty()){
+		int frameNo = time_stamp.read();
+		printf("%d\n", frameNo);
+	}
 
 //	test error
 	return 0;

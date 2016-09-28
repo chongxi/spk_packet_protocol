@@ -1,0 +1,28 @@
+#include "hls_design_meta.h"
+const Port_Property HLS_Design_Meta::port_props[]={
+	Port_Property("ap_clk", 1, hls_in, -1, "", "", 1),
+	Port_Property("ap_rst_n", 1, hls_in, -1, "", "", 1),
+	Port_Property("mua_stream_TUSER", 32, hls_in, 0, "axis", "in_data", 1),
+	Port_Property("mua_stream_TVALID", 1, hls_in, 2, "axis", "in_vld", 1),
+	Port_Property("mua_stream_TREADY", 1, hls_out, 2, "axis", "in_acc", 1),
+	Port_Property("mua_stream_TID", 5, hls_in, 1, "axis", "in_data", 1),
+	Port_Property("mua_stream_TDATA", 96, hls_in, 2, "axis", "in_data", 1),
+	Port_Property("out_pre_TUSER", 5, hls_out, 3, "axis", "out_data", 1),
+	Port_Property("out_pre_TVALID", 1, hls_out, 6, "axis", "out_vld", 1),
+	Port_Property("out_pre_TREADY", 1, hls_in, 6, "axis", "out_acc", 1),
+	Port_Property("out_pre_TID", 5, hls_out, 4, "axis", "out_data", 1),
+	Port_Property("out_pre_TLAST", 1, hls_out, 5, "axis", "out_data", 1),
+	Port_Property("out_pre_TDATA", 96, hls_out, 6, "axis", "out_data", 1),
+	Port_Property("out_post_TUSER", 5, hls_out, 7, "axis", "out_data", 1),
+	Port_Property("out_post_TVALID", 1, hls_out, 10, "axis", "out_vld", 1),
+	Port_Property("out_post_TREADY", 1, hls_in, 10, "axis", "out_acc", 1),
+	Port_Property("out_post_TID", 5, hls_out, 8, "axis", "out_data", 1),
+	Port_Property("out_post_TLAST", 1, hls_out, 9, "axis", "out_data", 1),
+	Port_Property("out_post_TDATA", 96, hls_out, 10, "axis", "out_data", 1),
+	Port_Property("time_stamp_V_TDATA", 32, hls_out, 11, "axis", "out_data", 1),
+	Port_Property("time_stamp_V_TVALID", 1, hls_out, 11, "axis", "out_vld", 1),
+	Port_Property("time_stamp_V_TREADY", 1, hls_in, 11, "axis", "out_acc", 1),
+	Port_Property("busy_V", 32, hls_out, 12, "ap_vld", "out_data", 1),
+	Port_Property("busy_V_ap_vld", 1, hls_out, 12, "ap_vld", "out_vld", 1),
+};
+const char* HLS_Design_Meta::dut_name = "spk_packet_tx";

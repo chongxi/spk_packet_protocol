@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2016.1
+Project:             spk_rx
+Solution:            solution1
+Device target:       xc7k325tffg900-2
+Report date:         Sun Sep 25 20:44:03 EDT 2016
+
+#=== Resource usage ===
+SLICE:          188
+LUT:            359
+FF:             644
+DSP:              2
+BRAM:             6
+SRL:              0
+#=== Final timing ===
+CP required:    4.000
+CP achieved:    3.255
+Timing met

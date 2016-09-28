@@ -1,0 +1,97 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Mon Sep 26 10:26:40 2016
+| Host         : laic-ws1 running 64-bit Ubuntu 16.04.1 LTS
+| Command      : report_control_sets -verbose -file spk_packet_tx_control_sets_placed.rpt
+| Design       : spk_packet_tx
+| Device       : xc7k325t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             237 |           84 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               8 |            5 |
+| Yes          | No                    | No                     |            6763 |         1272 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------------------+------------------+------------------+----------------+
+| Clock Signal |                      Enable Signal                      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------+---------------------------------------------------------+------------------+------------------+----------------+
+|  ap_clk      | spk_packet_tx_mux_32to1_sel5_2_1_U2/E[0]                |                  |                1 |              4 |
+|  ap_clk      | mua_stream_V_id_V_0_data_reg0                           |                  |                1 |              5 |
+|  ap_clk      | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/q0_reg[0]_0 | ap_rst_n_inv     |                3 |              5 |
+|  ap_clk      |                                                         | ap_rst_n_inv     |                5 |              8 |
+|  ap_clk      | mua_stream_V_user_0_data_reg0                           |                  |               10 |             32 |
+|  ap_clk      | mua_stream_V_data_V_0_data_reg0                         |                  |               25 |             96 |
+|  ap_clk      | out_pre_V_user_V_1_data_reg0                            |                  |               48 |            101 |
+|  ap_clk      | out_post_V_user_V_1_data_reg0                           |                  |               15 |            106 |
+|  ap_clk      | buf_2d_V_17_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_3_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_4_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_5_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_6_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_7_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_8_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_13_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_9_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_14_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_15_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_16_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_31_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_18_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_19_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_23_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_10_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_11_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_1_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_20_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_21_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_22_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_24_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_25_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_26_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_27_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_28_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_12_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_29_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_2_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in      |                  |               16 |            128 |
+|  ap_clk      | buf_2d_V_30_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in     |                  |               16 |            128 |
+|  ap_clk      |                                                         |                  |               84 |            237 |
+|  ap_clk      | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/q0_reg[0]_0 |                  |               87 |            402 |
+|  ap_clk      | p_495_in                                                |                  |              590 |           3072 |
+|  ap_clk      | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/E[0]        |                  |              512 |           3072 |
++--------------+---------------------------------------------------------+------------------+------------------+----------------+
+
+

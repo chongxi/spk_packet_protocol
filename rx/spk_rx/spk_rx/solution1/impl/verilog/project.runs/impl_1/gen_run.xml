@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1474850573">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="spk_packet_rx.vdi"/>
+  <File Type="BG-DRC" Name="spk_packet_rx.drc"/>
+  <File Type="BG-BGN" Name="spk_packet_rx.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="spk_packet_rx.sysdef"/>
+  <File Type="BITSTR-MMI" Name="spk_packet_rx.mmi"/>
+  <File Type="BITSTR-BMM" Name="spk_packet_rx_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="spk_packet_rx.nky"/>
+  <File Type="BITSTR-RBT" Name="spk_packet_rx.rbt"/>
+  <File Type="BITSTR-MSK" Name="spk_packet_rx.msk"/>
+  <File Type="BG-BIN" Name="spk_packet_rx.bin"/>
+  <File Type="BG-BIT" Name="spk_packet_rx.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="spk_packet_rx_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="spk_packet_rx_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="spk_packet_rx_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="spk_packet_rx_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-CLK" Name="spk_packet_rx_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="spk_packet_rx_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="spk_packet_rx_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="spk_packet_rx_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="spk_packet_rx_timing_summary_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="spk_packet_rx_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="spk_packet_rx_utilization_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="spk_packet_rx_placed.dcp"/>
+  <File Type="PLACE-CLK" Name="spk_packet_rx_clock_utilization_placed.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="spk_packet_rx_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="spk_packet_rx_timing_summary_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="spk_packet_rx_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="spk_packet_rx_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="spk_packet_rx_pwropt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="spk_packet_rx_postroute_physopt.dcp"/>
+  <File Type="PA-TCL" Name="spk_packet_rx.tcl"/>
+  <File Type="PLACE-IO" Name="spk_packet_rx_io_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="spk_packet_rx_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="spk_packet_rx_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="spk_packet_rx.hwdef"/>
+  <File Type="PLACE-TIMING" Name="spk_packet_rx_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="spk_packet_rx_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="spk_packet_rx_opt.dcp"/>
+  <File Type="PA-DCP" Name="spk_packet_rx.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="spk_packet_rx_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-CTRL" Name="spk_packet_rx_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="spk_packet_rx_incremental_reuse_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="spk_packet_rx_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="spk_packet_rx_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="spk_packet_rx_methodology_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="spk_packet_rx_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="spk_packet_rx_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="spk_packet_rx_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="spk_packet_rx_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="spk_packet_rx_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="spk_packet_rx_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="spk_packet_rx_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="spk_packet_rx_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="spk_packet_rx_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="spk_packet_rx_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="spk_packet_rx_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="spk_packet_rx_route_status.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spk_packet_rx_mul_6ns_6ns_11_3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spk_packet_rx_spk_V.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spk_packet_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="spk_packet_rx"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/spk_packet_rx.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

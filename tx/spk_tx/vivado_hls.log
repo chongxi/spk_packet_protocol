@@ -1,0 +1,1620 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'laic' on host 'laic-ws1.hhmi.org' (Linux_x86_64 version 4.4.0-31-generic) on Mon Sep 26 10:22:25 EDT 2016
+INFO: [HLS 200-10] On os Ubuntu 16.04.1 LTS
+INFO: [HLS 200-10] In directory '/vivado_proj/spk_packet_protocol/tx/spk_tx'
+INFO: [HLS 200-10] Opening project '/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx'.
+INFO: [HLS 200-10] Opening solution '/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k325tffg900-2'
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 10:22:38 2016...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source run_vivado.tcl -notrace
+[Mon Sep 26 10:22:48 2016] Launched synth_1...
+Run output will be captured here: /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Mon Sep 26 10:22:48 2016] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log spk_packet_tx.vds -m64 -mode batch -messageDb vivado.pb -notrace -source spk_packet_tx.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source spk_packet_tx.tcl -notrace
+Command: synth_design -top spk_packet_tx -part xc7k325tffg900-2 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1088.266 ; gain = 211.094 ; free physical = 108167 ; free virtual = 129108
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:12]
+	Parameter ap_ST_pp0_stg0_fsm_0 bound to: 1'b1 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter ap_const_lv2_0 bound to: 2'b00 
+	Parameter ap_const_lv4_0 bound to: 4'b0000 
+	Parameter ap_const_lv2_1 bound to: 2'b01 
+	Parameter ap_const_lv2_2 bound to: 2'b10 
+	Parameter ap_const_lv5_0 bound to: 5'b00000 
+	Parameter ap_const_lv5_1 bound to: 5'b00001 
+	Parameter ap_const_lv5_2 bound to: 5'b00010 
+	Parameter ap_const_lv5_3 bound to: 5'b00011 
+	Parameter ap_const_lv5_4 bound to: 5'b00100 
+	Parameter ap_const_lv5_5 bound to: 5'b00101 
+	Parameter ap_const_lv5_6 bound to: 5'b00110 
+	Parameter ap_const_lv5_7 bound to: 5'b00111 
+	Parameter ap_const_lv5_8 bound to: 5'b01000 
+	Parameter ap_const_lv5_9 bound to: 5'b01001 
+	Parameter ap_const_lv5_A bound to: 5'b01010 
+	Parameter ap_const_lv5_B bound to: 5'b01011 
+	Parameter ap_const_lv5_C bound to: 5'b01100 
+	Parameter ap_const_lv5_D bound to: 5'b01101 
+	Parameter ap_const_lv5_E bound to: 5'b01110 
+	Parameter ap_const_lv5_F bound to: 5'b01111 
+	Parameter ap_const_lv5_10 bound to: 5'b10000 
+	Parameter ap_const_lv5_11 bound to: 5'b10001 
+	Parameter ap_const_lv5_12 bound to: 5'b10010 
+	Parameter ap_const_lv5_13 bound to: 5'b10011 
+	Parameter ap_const_lv5_14 bound to: 5'b10100 
+	Parameter ap_const_lv5_15 bound to: 5'b10101 
+	Parameter ap_const_lv5_16 bound to: 5'b10110 
+	Parameter ap_const_lv5_17 bound to: 5'b10111 
+	Parameter ap_const_lv5_18 bound to: 5'b11000 
+	Parameter ap_const_lv5_19 bound to: 5'b11001 
+	Parameter ap_const_lv5_1A bound to: 5'b11010 
+	Parameter ap_const_lv5_1B bound to: 5'b11011 
+	Parameter ap_const_lv5_1C bound to: 5'b11100 
+	Parameter ap_const_lv5_1D bound to: 5'b11101 
+	Parameter ap_const_lv5_1E bound to: 5'b11110 
+	Parameter ap_const_lv5_1F bound to: 5'b11111 
+	Parameter ap_const_lv4_8 bound to: 4'b1000 
+	Parameter ap_const_lv4_1 bound to: 4'b0001 
+	Parameter ap_const_lv32_20 bound to: 32 - type: integer 
+	Parameter ap_const_lv4_A bound to: 4'b1010 
+	Parameter ap_const_lv4_7 bound to: 4'b0111 
+	Parameter ap_const_lv64_1 bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_const_lv32_FFFFFFF6 bound to: -10 - type: integer 
+	Parameter ap_const_lv64_0 bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:420]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_buf_2d_V_0' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:57]
+	Parameter DataWidth bound to: 96 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_buf_2d_V_0_ram' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:9]
+	Parameter DWIDTH bound to: 96 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:24]
+INFO: [Synth 8-3876] $readmem data file './spk_packet_tx_buf_2d_V_0_ram.dat' is read successfully [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:27]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_buf_2d_V_0_ram' (1#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:9]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_buf_2d_V_0' (2#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_4_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_4_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 4 - type: integer 
+	Parameter din2_WIDTH bound to: 4 - type: integer 
+	Parameter din3_WIDTH bound to: 4 - type: integer 
+	Parameter din4_WIDTH bound to: 4 - type: integer 
+	Parameter din5_WIDTH bound to: 4 - type: integer 
+	Parameter din6_WIDTH bound to: 4 - type: integer 
+	Parameter din7_WIDTH bound to: 4 - type: integer 
+	Parameter din8_WIDTH bound to: 4 - type: integer 
+	Parameter din9_WIDTH bound to: 4 - type: integer 
+	Parameter din10_WIDTH bound to: 4 - type: integer 
+	Parameter din11_WIDTH bound to: 4 - type: integer 
+	Parameter din12_WIDTH bound to: 4 - type: integer 
+	Parameter din13_WIDTH bound to: 4 - type: integer 
+	Parameter din14_WIDTH bound to: 4 - type: integer 
+	Parameter din15_WIDTH bound to: 4 - type: integer 
+	Parameter din16_WIDTH bound to: 4 - type: integer 
+	Parameter din17_WIDTH bound to: 4 - type: integer 
+	Parameter din18_WIDTH bound to: 4 - type: integer 
+	Parameter din19_WIDTH bound to: 4 - type: integer 
+	Parameter din20_WIDTH bound to: 4 - type: integer 
+	Parameter din21_WIDTH bound to: 4 - type: integer 
+	Parameter din22_WIDTH bound to: 4 - type: integer 
+	Parameter din23_WIDTH bound to: 4 - type: integer 
+	Parameter din24_WIDTH bound to: 4 - type: integer 
+	Parameter din25_WIDTH bound to: 4 - type: integer 
+	Parameter din26_WIDTH bound to: 4 - type: integer 
+	Parameter din27_WIDTH bound to: 4 - type: integer 
+	Parameter din28_WIDTH bound to: 4 - type: integer 
+	Parameter din29_WIDTH bound to: 4 - type: integer 
+	Parameter din30_WIDTH bound to: 4 - type: integer 
+	Parameter din31_WIDTH bound to: 4 - type: integer 
+	Parameter din32_WIDTH bound to: 4 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_4_1' (3#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_4_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_2_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_2_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 2 - type: integer 
+	Parameter din2_WIDTH bound to: 2 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter din5_WIDTH bound to: 2 - type: integer 
+	Parameter din6_WIDTH bound to: 2 - type: integer 
+	Parameter din7_WIDTH bound to: 2 - type: integer 
+	Parameter din8_WIDTH bound to: 2 - type: integer 
+	Parameter din9_WIDTH bound to: 2 - type: integer 
+	Parameter din10_WIDTH bound to: 2 - type: integer 
+	Parameter din11_WIDTH bound to: 2 - type: integer 
+	Parameter din12_WIDTH bound to: 2 - type: integer 
+	Parameter din13_WIDTH bound to: 2 - type: integer 
+	Parameter din14_WIDTH bound to: 2 - type: integer 
+	Parameter din15_WIDTH bound to: 2 - type: integer 
+	Parameter din16_WIDTH bound to: 2 - type: integer 
+	Parameter din17_WIDTH bound to: 2 - type: integer 
+	Parameter din18_WIDTH bound to: 2 - type: integer 
+	Parameter din19_WIDTH bound to: 2 - type: integer 
+	Parameter din20_WIDTH bound to: 2 - type: integer 
+	Parameter din21_WIDTH bound to: 2 - type: integer 
+	Parameter din22_WIDTH bound to: 2 - type: integer 
+	Parameter din23_WIDTH bound to: 2 - type: integer 
+	Parameter din24_WIDTH bound to: 2 - type: integer 
+	Parameter din25_WIDTH bound to: 2 - type: integer 
+	Parameter din26_WIDTH bound to: 2 - type: integer 
+	Parameter din27_WIDTH bound to: 2 - type: integer 
+	Parameter din28_WIDTH bound to: 2 - type: integer 
+	Parameter din29_WIDTH bound to: 2 - type: integer 
+	Parameter din30_WIDTH bound to: 2 - type: integer 
+	Parameter din31_WIDTH bound to: 2 - type: integer 
+	Parameter din32_WIDTH bound to: 2 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_2_1' (4#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_2_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_96_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_96_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 96 - type: integer 
+	Parameter din2_WIDTH bound to: 96 - type: integer 
+	Parameter din3_WIDTH bound to: 96 - type: integer 
+	Parameter din4_WIDTH bound to: 96 - type: integer 
+	Parameter din5_WIDTH bound to: 96 - type: integer 
+	Parameter din6_WIDTH bound to: 96 - type: integer 
+	Parameter din7_WIDTH bound to: 96 - type: integer 
+	Parameter din8_WIDTH bound to: 96 - type: integer 
+	Parameter din9_WIDTH bound to: 96 - type: integer 
+	Parameter din10_WIDTH bound to: 96 - type: integer 
+	Parameter din11_WIDTH bound to: 96 - type: integer 
+	Parameter din12_WIDTH bound to: 96 - type: integer 
+	Parameter din13_WIDTH bound to: 96 - type: integer 
+	Parameter din14_WIDTH bound to: 96 - type: integer 
+	Parameter din15_WIDTH bound to: 96 - type: integer 
+	Parameter din16_WIDTH bound to: 96 - type: integer 
+	Parameter din17_WIDTH bound to: 96 - type: integer 
+	Parameter din18_WIDTH bound to: 96 - type: integer 
+	Parameter din19_WIDTH bound to: 96 - type: integer 
+	Parameter din20_WIDTH bound to: 96 - type: integer 
+	Parameter din21_WIDTH bound to: 96 - type: integer 
+	Parameter din22_WIDTH bound to: 96 - type: integer 
+	Parameter din23_WIDTH bound to: 96 - type: integer 
+	Parameter din24_WIDTH bound to: 96 - type: integer 
+	Parameter din25_WIDTH bound to: 96 - type: integer 
+	Parameter din26_WIDTH bound to: 96 - type: integer 
+	Parameter din27_WIDTH bound to: 96 - type: integer 
+	Parameter din28_WIDTH bound to: 96 - type: integer 
+	Parameter din29_WIDTH bound to: 96 - type: integer 
+	Parameter din30_WIDTH bound to: 96 - type: integer 
+	Parameter din31_WIDTH bound to: 96 - type: integer 
+	Parameter din32_WIDTH bound to: 96 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 96 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_96_1' (5#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_96_1.v:11]
+INFO: [Synth 8-4471] merging register 'out_post_V_data_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2383]
+INFO: [Synth 8-4471] merging register 'out_post_V_id_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2384]
+INFO: [Synth 8-4471] merging register 'out_post_V_last_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2385]
+INFO: [Synth 8-4471] merging register 'out_post_V_user_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2386]
+INFO: [Synth 8-4471] merging register 'out_pre_V_data_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2387]
+INFO: [Synth 8-4471] merging register 'out_pre_V_id_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2388]
+INFO: [Synth 8-4471] merging register 'out_pre_V_last_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2389]
+INFO: [Synth 8-4471] merging register 'out_pre_V_user_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2390]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx' (6#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:12]
+WARNING: [Synth 8-3331] design spk_packet_tx_buf_2d_V_0 has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1173.273 ; gain = 296.102 ; free physical = 108111 ; free virtual = 129040
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1173.273 ; gain = 296.102 ; free physical = 108111 ; free virtual = 129040
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+Finished Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1521.289 ; gain = 3.000 ; free physical = 107818 ; free virtual = 128750
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'buf_2d_V_10_addr_reg_2790_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:826]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_11_addr_reg_2795_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:842]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_12_addr_reg_2800_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:858]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_13_addr_reg_2805_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:874]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_14_addr_reg_2810_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:890]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_15_addr_reg_2815_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:906]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_16_addr_reg_2820_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:922]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_17_addr_reg_2825_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:938]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_18_addr_reg_2830_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:954]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_19_addr_reg_2835_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:970]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_1_addr_reg_2745_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:682]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_20_addr_reg_2840_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:986]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_21_addr_reg_2845_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1002]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_22_addr_reg_2850_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1018]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_23_addr_reg_2855_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1034]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_24_addr_reg_2860_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1050]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_25_addr_reg_2865_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1066]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_26_addr_reg_2870_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1082]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_27_addr_reg_2875_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1098]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_28_addr_reg_2880_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1114]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_29_addr_reg_2885_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1130]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_2_addr_reg_2750_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:698]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_30_addr_reg_2890_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1146]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_31_addr_reg_2895_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1162]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_3_addr_reg_2755_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:714]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_4_addr_reg_2760_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:730]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_5_addr_reg_2765_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:746]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_6_addr_reg_2770_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:762]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_7_addr_reg_2775_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:778]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_8_addr_reg_2780_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:794]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_9_addr_reg_2785_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:810]
+INFO: [Synth 8-4471] merging register 'tmp_id_V_reg_2718_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2337]
+INFO: [Synth 8-4471] merging register 'out_post_V_id_V_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1541]
+INFO: [Synth 8-4471] merging register 'out_post_V_last_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1553]
+INFO: [Synth 8-4471] merging register 'out_post_V_user_V_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1565]
+INFO: [Synth 8-4471] merging register 'out_pre_V_id_V_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1589]
+INFO: [Synth 8-4471] merging register 'out_pre_V_last_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1601]
+INFO: [Synth 8-4471] merging register 'out_pre_V_user_V_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1613]
+INFO: [Synth 8-5544] ROM "tmp_10_fu_2369_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_13_fu_2357_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_10_fu_2369_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_13_fu_2357_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128808
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 71    
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 33    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 32    
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 63    
+	   3 Input      4 Bit        Muxes := 32    
+	   2 Input      3 Bit        Muxes := 68    
+	   2 Input      2 Bit        Muxes := 31    
+	   3 Input      2 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 74    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spk_packet_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 39    
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 33    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 32    
+	   2 Input      4 Bit        Muxes := 32    
+	   2 Input      3 Bit        Muxes := 68    
+	   3 Input      2 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 74    
+Module spk_packet_tx_buf_2d_V_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               96 Bit    Registers := 1     
+Module spk_packet_tx_mux_32to1_sel5_4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 31    
+Module spk_packet_tx_mux_32to1_sel5_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+Module spk_packet_tx_mux_32to1_sel5_96_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name   | RTL Object                                           | Inference      | Size (Depth x Width) | Primitives    | 
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+|spk_packet_tx | buf_2d_V_1_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_2_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_3_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_4_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_5_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_6_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_7_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_8_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_9_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_10_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_11_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_12_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_13_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_14_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_15_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_16_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_17_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_18_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_19_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_20_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_21_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_22_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_23_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_24_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_25_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_26_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_27_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_28_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_29_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_30_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_31_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[0]' (FDE) to 't_V_reg_2735_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[0]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[1]' (FDE) to 't_V_reg_2735_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[2]' (FDE) to 't_V_reg_2735_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[3]' (FDE) to 't_V_reg_2735_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[4]' (FDE) to 't_V_reg_2735_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[0]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[1]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[2]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[3]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[4]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[1]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[2]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[3]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[4]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[32]' (FDE) to 'tmp_9_reg_3060_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_pre_V_user_V_1_data_reg_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (ap_CS_fsm_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (out_pre_V_user_V_1_data_reg_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[32]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_10_reg_3080_pp0_iter4_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_4_reg_3076_pp0_iter4_reg[0]) is unused and will be removed from module spk_packet_tx.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107981 ; free virtual = 128802
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107981 ; free virtual = 128802
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107970 ; free virtual = 128797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107941 ; free virtual = 128769
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|spk_packet_tx | ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[95] | 3      | 95    | NO           | NO                 | NO                | 95     | 0       | 
+|spk_packet_tx | ap_reg_ppstg_tmp_user_reg_2713_pp0_iter4_reg[31]     | 5      | 27    | NO           | NO                 | YES               | 27     | 0       | 
+|spk_packet_tx | ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[0]           | 3      | 5     | NO           | NO                 | YES               | 5      | 0       | 
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |    34|
+|3     |LUT2   |    14|
+|4     |LUT3   |   157|
+|5     |LUT4   |    50|
+|6     |LUT5   |   125|
+|7     |LUT6   |  1090|
+|8     |MUXF7  |   408|
+|9     |RAM32M |   512|
+|10    |SRL16E |   127|
+|11    |FDRE   |  7013|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+----------------------------------+------+
+|      |Instance                               |Module                            |Cells |
++------+---------------------------------------+----------------------------------+------+
+|1     |top                                    |                                  |  9538|
+|2     |  buf_2d_V_0_U                         |spk_packet_tx_buf_2d_V_0          |   122|
+|3     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_61   |   122|
+|4     |  buf_2d_V_10_U                        |spk_packet_tx_buf_2d_V_0_0        |   113|
+|5     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_60   |   113|
+|6     |  buf_2d_V_11_U                        |spk_packet_tx_buf_2d_V_0_1        |   113|
+|7     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_59   |   113|
+|8     |  buf_2d_V_12_U                        |spk_packet_tx_buf_2d_V_0_2        |   113|
+|9     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_58   |   113|
+|10    |  buf_2d_V_13_U                        |spk_packet_tx_buf_2d_V_0_3        |   113|
+|11    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_57   |   113|
+|12    |  buf_2d_V_14_U                        |spk_packet_tx_buf_2d_V_0_4        |   113|
+|13    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_56   |   113|
+|14    |  buf_2d_V_15_U                        |spk_packet_tx_buf_2d_V_0_5        |   113|
+|15    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_55   |   113|
+|16    |  buf_2d_V_16_U                        |spk_packet_tx_buf_2d_V_0_6        |   113|
+|17    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_54   |   113|
+|18    |  buf_2d_V_17_U                        |spk_packet_tx_buf_2d_V_0_7        |   113|
+|19    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_53   |   113|
+|20    |  buf_2d_V_18_U                        |spk_packet_tx_buf_2d_V_0_8        |   113|
+|21    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_52   |   113|
+|22    |  buf_2d_V_19_U                        |spk_packet_tx_buf_2d_V_0_9        |   113|
+|23    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_51   |   113|
+|24    |  buf_2d_V_1_U                         |spk_packet_tx_buf_2d_V_0_10       |   114|
+|25    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_50   |   114|
+|26    |  buf_2d_V_20_U                        |spk_packet_tx_buf_2d_V_0_11       |   113|
+|27    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_49   |   113|
+|28    |  buf_2d_V_21_U                        |spk_packet_tx_buf_2d_V_0_12       |   113|
+|29    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_48   |   113|
+|30    |  buf_2d_V_22_U                        |spk_packet_tx_buf_2d_V_0_13       |   113|
+|31    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_47   |   113|
+|32    |  buf_2d_V_23_U                        |spk_packet_tx_buf_2d_V_0_14       |   113|
+|33    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_46   |   113|
+|34    |  buf_2d_V_24_U                        |spk_packet_tx_buf_2d_V_0_15       |   113|
+|35    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_45   |   113|
+|36    |  buf_2d_V_25_U                        |spk_packet_tx_buf_2d_V_0_16       |   113|
+|37    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_44   |   113|
+|38    |  buf_2d_V_26_U                        |spk_packet_tx_buf_2d_V_0_17       |   113|
+|39    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_43   |   113|
+|40    |  buf_2d_V_27_U                        |spk_packet_tx_buf_2d_V_0_18       |   113|
+|41    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_42   |   113|
+|42    |  buf_2d_V_28_U                        |spk_packet_tx_buf_2d_V_0_19       |   113|
+|43    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_41   |   113|
+|44    |  buf_2d_V_29_U                        |spk_packet_tx_buf_2d_V_0_20       |   113|
+|45    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_40   |   113|
+|46    |  buf_2d_V_2_U                         |spk_packet_tx_buf_2d_V_0_21       |   114|
+|47    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_39   |   114|
+|48    |  buf_2d_V_30_U                        |spk_packet_tx_buf_2d_V_0_22       |   113|
+|49    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_38   |   113|
+|50    |  buf_2d_V_31_U                        |spk_packet_tx_buf_2d_V_0_23       |   113|
+|51    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_37   |   113|
+|52    |  buf_2d_V_3_U                         |spk_packet_tx_buf_2d_V_0_24       |   114|
+|53    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_36   |   114|
+|54    |  buf_2d_V_4_U                         |spk_packet_tx_buf_2d_V_0_25       |   113|
+|55    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_35   |   113|
+|56    |  buf_2d_V_5_U                         |spk_packet_tx_buf_2d_V_0_26       |   113|
+|57    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_34   |   113|
+|58    |  buf_2d_V_6_U                         |spk_packet_tx_buf_2d_V_0_27       |   113|
+|59    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_33   |   113|
+|60    |  buf_2d_V_7_U                         |spk_packet_tx_buf_2d_V_0_28       |   113|
+|61    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_32   |   113|
+|62    |  buf_2d_V_8_U                         |spk_packet_tx_buf_2d_V_0_29       |   113|
+|63    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_31   |   113|
+|64    |  buf_2d_V_9_U                         |spk_packet_tx_buf_2d_V_0_30       |   113|
+|65    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram      |   113|
+|66    |  spk_packet_tx_mux_32to1_sel5_2_1_U2  |spk_packet_tx_mux_32to1_sel5_2_1  |    32|
+|67    |  spk_packet_tx_mux_32to1_sel5_4_1_U1  |spk_packet_tx_mux_32to1_sel5_4_1  |   256|
+|68    |  spk_packet_tx_mux_32to1_sel5_96_1_U3 |spk_packet_tx_mux_32to1_sel5_96_1 |  1248|
++------+---------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1549.680 ; gain = 195.398 ; free physical = 107913 ; free virtual = 128741
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.688 ; gain = 672.516 ; free physical = 107913 ; free virtual = 128741
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 512 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1581.695 ; gain = 630.027 ; free physical = 107957 ; free virtual = 128782
+report_utilization: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1613.711 ; gain = 0.000 ; free physical = 107952 ; free virtual = 128778
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 10:23:56 2016...
+[Mon Sep 26 10:24:00 2016] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.17 ; elapsed = 00:01:12 . Memory (MB): peak = 1012.266 ; gain = 7.844 ; free physical = 108634 ; free virtual = 129460
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc:2]
+Finished Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 512 instances
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1355.277 ; gain = 343.012 ; free physical = 108341 ; free virtual = 129167
+report_utilization: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1355.277 ; gain = 0.000 ; free physical = 108341 ; free virtual = 129167
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1903.977 ; gain = 548.699 ; free physical = 107854 ; free virtual = 128697
+[Mon Sep 26 10:24:24 2016] Launched impl_1...
+Run output will be captured here: /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/runme.log
+[Mon Sep 26 10:24:24 2016] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log spk_packet_tx.vdi -applog -m64 -messageDb vivado.pb -mode batch -source spk_packet_tx.tcl -notrace
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source spk_packet_tx.tcl -notrace
+Command: open_checkpoint /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/spk_packet_tx.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 949.652 ; gain = 0.000 ; free physical = 107621 ; free virtual = 128522
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-12459-laic-ws1/dcp/spk_packet_tx.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc:2]
+Finished Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-12459-laic-ws1/dcp/spk_packet_tx.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 512 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1295.246 ; gain = 345.594 ; free physical = 107314 ; free virtual = 128215
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1371.281 ; gain = 67.031 ; free physical = 107311 ; free virtual = 128212
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: a22f9f97
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14574d0bb
+
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.54 . Memory (MB): peak = 1893.949 ; gain = 56.027 ; free physical = 106913 ; free virtual = 127815
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 14574d0bb
+
+Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:00.89 . Memory (MB): peak = 1893.949 ; gain = 56.027 ; free physical = 106911 ; free virtual = 127813
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 24 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1070f9909
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1893.949 ; gain = 56.027 ; free physical = 106911 ; free virtual = 127814
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1893.949 ; gain = 0.000 ; free physical = 106911 ; free virtual = 127814
+Ending Logic Optimization Task | Checksum: 1070f9909
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1893.949 ; gain = 56.027 ; free physical = 106911 ; free virtual = 127814
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1070f9909
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1893.949 ; gain = 0.000 ; free physical = 106911 ; free virtual = 127814
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1893.949 ; gain = 598.703 ; free physical = 106911 ; free virtual = 127814
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/spk_packet_tx_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1980.855 ; gain = 0.000 ; free physical = 106879 ; free virtual = 127787
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1980.855 ; gain = 0.000 ; free physical = 106879 ; free virtual = 127787
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1980.855 ; gain = 0.000 ; free physical = 106878 ; free virtual = 127786
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 00000000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106876 ; free virtual = 127785
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106876 ; free virtual = 127786
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 00000000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106876 ; free virtual = 127786
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 0eaf4267
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106876 ; free virtual = 127786
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: cf798f2b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106866 ; free virtual = 127778
+Phase 1.2.1 Place Init Design | Checksum: caa6102e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106830 ; free virtual = 127743
+Phase 1.2 Build Placer Netlist Model | Checksum: caa6102e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106830 ; free virtual = 127743
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: caa6102e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106830 ; free virtual = 127743
+Phase 1 Placer Initialization | Checksum: caa6102e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1996.863 ; gain = 16.008 ; free physical = 106830 ; free virtual = 127743
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: d8c1cd40
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106797 ; free virtual = 127712
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: d8c1cd40
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:21 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106796 ; free virtual = 127710
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 835d6a01
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:25 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106793 ; free virtual = 127708
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: a38948c5
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:26 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106792 ; free virtual = 127708
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: a38948c5
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:26 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106792 ; free virtual = 127708
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: e54c580c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:27 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106793 ; free virtual = 127708
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: e54c580c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:27 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106793 ; free virtual = 127708
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 245f6c38
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:30 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106775 ; free virtual = 127691
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 8582cc22
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:30 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106774 ; free virtual = 127690
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 8582cc22
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:31 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106774 ; free virtual = 127690
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: fe9bff4b
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:34 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106771 ; free virtual = 127688
+Phase 3 Detail Placement | Checksum: fe9bff4b
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:34 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106771 ; free virtual = 127688
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 57955cad
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:37 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106759 ; free virtual = 127676
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.029. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 1168b815b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:36 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+Phase 4.1 Post Commit Optimization | Checksum: 1168b815b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:36 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1168b815b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:36 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127689
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1168b815b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:36 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127689
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 1168b815b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:37 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 13c0cb9f9
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:37 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13c0cb9f9
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:37 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+Ending Placer Task | Checksum: ee15d597
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:37 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:13 ; elapsed = 00:01:38 . Memory (MB): peak = 2043.910 ; gain = 63.055 ; free physical = 106766 ; free virtual = 127688
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106754 ; free virtual = 127686
+report_io: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106758 ; free virtual = 127683
+report_utilization: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106757 ; free virtual = 127682
+report_control_sets: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106757 ; free virtual = 127682
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 104c50d57
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106756 ; free virtual = 127682
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.029 | TNS=-0.235 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 9 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net buf_2d_V_3_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in. Replicated 4 times.
+INFO: [Physopt 32-81] Processed net buf_2d_V_7_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in. Replicated 2 times.
+INFO: [Physopt 32-572] Net p_495_in was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net buf_2d_V_12_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in. Replicated 4 times.
+INFO: [Physopt 32-572] Net buf_2d_V_18_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/E[0]. Replicated 10 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 5 nets. Created 23 new instances.
+
+INFO: [Physopt 32-76] Pass 2. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net buf_2d_V_24_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/E[0]_repN_3. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/E[0]_repN. Replicated 1 times.
+INFO: [Physopt 32-29] End Pass 2. Optimized 3 nets. Created 4 new instances.
+
+INFO: [Physopt 32-76] Pass 3. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-572] Net buf_2d_V_18_U/spk_packet_tx_buf_2d_V_0_ram_U/p_0_in was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-29] End Pass 3. Optimized 0 net. Created 0 new instance.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.035 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+Phase 2 Fanout Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 3 Placement Based Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 4 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 4 Rewire | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 5 Critical Cell Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 6 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 6 DSP Register Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 7 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 7 BRAM Register Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 8 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 8 Shift Register Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 9 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 9 Critical Pin Optimization | Checksum: 107ed7bc7
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106755 ; free virtual = 127683
+
+Phase 10 Very High Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net p_495_in. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/E[0]. Replicated 1 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 2 nets. Created 2 new instances.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.035 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127679
+Phase 10 Very High Fanout Optimization | Checksum: 111a727fb
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:27 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127679
+
+Phase 11 BRAM Enable Optimization
+Phase 11 BRAM Enable Optimization | Checksum: 111a727fb
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:27 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127680
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127680
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.035 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed (s)  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.064  |          0.235  |           27  |              0  |                     8  |           0  |           1  |            8  |
+|  Placement Based    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Critical Cell      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Very High Fanout   |          0.000  |          0.000  |            2  |              0  |                     2  |           0  |           1  |           15  |
+|  Critical Pin       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Total              |          0.064  |          0.235  |           29  |              0  |                    10  |           0  |           2  |           23  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 1f68cfe18
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:28 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127680
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:07 ; elapsed = 00:00:28 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106751 ; free virtual = 127680
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2043.910 ; gain = 0.000 ; free physical = 106743 ; free virtual = 127681
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 40ce5f93 ConstDB: 0 ShapeSum: f90a0f66 RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "mua_stream_TUSER[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[65]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[65]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[66]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[66]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[55]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[55]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[56]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[56]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[73]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[73]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[74]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[74]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[51]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[51]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[57]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[57]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[58]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[58]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[94]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[94]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TUSER[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TUSER[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "time_stamp_V_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "time_stamp_V_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TID[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TID[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TID[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TID[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TID[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TID[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "out_post_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "out_post_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "out_pre_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "out_pre_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[41]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[41]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TID[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TID[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[49]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[49]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[85]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[85]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TID[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TID[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[42]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[42]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[43]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[43]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[44]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[44]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[47]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[47]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[81]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[81]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[82]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[82]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[33]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[33]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[34]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[34]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[67]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[67]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[68]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[68]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[77]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[77]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[78]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[78]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[79]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[79]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[80]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[80]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[83]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[83]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[84]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[84]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[86]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[86]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[95]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[95]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[75]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[75]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[76]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[76]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[89]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[89]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[90]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[90]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[50]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[50]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[93]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[93]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[32]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[32]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[91]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[91]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[92]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[92]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[48]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[48]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[52]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[52]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[53]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[53]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[54]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[54]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[59]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[59]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[60]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[60]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[61]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[61]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[62]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[62]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[63]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[63]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[64]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[64]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[39]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[39]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[40]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[40]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "mua_stream_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "mua_stream_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1 Build RT Design | Checksum: c44675ed
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 2311.742 ; gain = 253.309 ; free physical = 106485 ; free virtual = 127418
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: c44675ed
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:22 . Memory (MB): peak = 2311.742 ; gain = 253.309 ; free physical = 106482 ; free virtual = 127416
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: c44675ed
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:22 . Memory (MB): peak = 2311.742 ; gain = 253.309 ; free physical = 106446 ; free virtual = 127381
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: c44675ed
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:22 . Memory (MB): peak = 2311.742 ; gain = 253.309 ; free physical = 106446 ; free virtual = 127381
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 13900b2eb
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106426 ; free virtual = 127361
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.286  | TNS=0.000  | WHS=-0.252 | THS=-1941.329|
+
+Phase 2 Router Initialization | Checksum: 11d70b8c5
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:26 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106426 ; free virtual = 127361
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1026110ec
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:27 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 822
+ Number of Nodes with overlaps = 79
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 2439895e2
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.119  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20dde0d14
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+Phase 4 Rip-up And Reroute | Checksum: 20dde0d14
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1ff5e149d
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.200  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1ff5e149d
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ff5e149d
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+Phase 5 Delay and Skew Optimization | Checksum: 1ff5e149d
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1a8af7dc1
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.200  | TNS=0.000  | WHS=0.042  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 23e340a19
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+Phase 6 Post Hold Fix | Checksum: 23e340a19
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106417 ; free virtual = 127353
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.752827 %
+  Global Horizontal Routing Utilization  = 0.779203 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 252c61b43
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 252c61b43
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 250890582
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106417 ; free virtual = 127352
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.200  | TNS=0.000  | WHS=0.042  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 250890582
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2316.613 ; gain = 258.180 ; free physical = 106418 ; free virtual = 127353
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2316.613 ; gain = 272.703 ; free physical = 106418 ; free virtual = 127353
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.70 . Memory (MB): peak = 2325.613 ; gain = 0.000 ; free physical = 106404 ; free virtual = 127351
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/project.runs/impl_1/spk_packet_tx_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 10:28:02 2016...
+[Mon Sep 26 10:28:06 2016] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.21 ; elapsed = 00:03:42 . Memory (MB): peak = 1951.992 ; gain = 8.000 ; free physical = 107716 ; free virtual = 128659
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/.Xil/Vivado-11589-laic-ws1/dcp/spk_packet_tx.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc:2]
+Finished Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/.Xil/Vivado-11589-laic-ws1/dcp/spk_packet_tx.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2066.047 ; gain = 11.000 ; free physical = 107586 ; free virtual = 128539
+Restored from archive | CPU: 0.480000 secs | Memory: 10.805687 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2066.047 ; gain = 11.000 ; free physical = 107586 ; free virtual = 128539
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 512 instances
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2243.062 ; gain = 0.000 ; free physical = 107539 ; free virtual = 128480
+
+
+Implementation tool: Xilinx Vivado v.2016.1
+Project:             spk_tx
+Solution:            solution1
+Device target:       xc7k325tffg900-2
+Report date:         Mon Sep 26 10:28:14 EDT 2016
+
+#=== Resource usage ===
+SLICE:         1375
+LUT:           3534
+FF:            7013
+DSP:              0
+BRAM:             0
+SRL:             67
+#=== Final timing ===
+CP required:    4.000
+CP achieved:    3.800
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 10:28:14 2016...

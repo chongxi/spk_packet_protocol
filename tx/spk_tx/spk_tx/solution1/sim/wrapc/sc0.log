@@ -1,0 +1,5 @@
+   Build using "/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/gcc/bin/g++"
+   Compiling spk_packet_tx_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_spk_packet_tx.cpp
+   Compiling spk_packet_tx.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

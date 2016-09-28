@@ -1,0 +1,828 @@
+
+*** Running vivado
+    with args -log spk_packet_tx.vds -m64 -mode batch -messageDb vivado.pb -notrace -source spk_packet_tx.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source spk_packet_tx.tcl -notrace
+Command: synth_design -top spk_packet_tx -part xc7k325tffg900-2 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -149 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1088.266 ; gain = 211.094 ; free physical = 108167 ; free virtual = 129108
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:12]
+	Parameter ap_ST_pp0_stg0_fsm_0 bound to: 1'b1 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter ap_const_lv2_0 bound to: 2'b00 
+	Parameter ap_const_lv4_0 bound to: 4'b0000 
+	Parameter ap_const_lv2_1 bound to: 2'b01 
+	Parameter ap_const_lv2_2 bound to: 2'b10 
+	Parameter ap_const_lv5_0 bound to: 5'b00000 
+	Parameter ap_const_lv5_1 bound to: 5'b00001 
+	Parameter ap_const_lv5_2 bound to: 5'b00010 
+	Parameter ap_const_lv5_3 bound to: 5'b00011 
+	Parameter ap_const_lv5_4 bound to: 5'b00100 
+	Parameter ap_const_lv5_5 bound to: 5'b00101 
+	Parameter ap_const_lv5_6 bound to: 5'b00110 
+	Parameter ap_const_lv5_7 bound to: 5'b00111 
+	Parameter ap_const_lv5_8 bound to: 5'b01000 
+	Parameter ap_const_lv5_9 bound to: 5'b01001 
+	Parameter ap_const_lv5_A bound to: 5'b01010 
+	Parameter ap_const_lv5_B bound to: 5'b01011 
+	Parameter ap_const_lv5_C bound to: 5'b01100 
+	Parameter ap_const_lv5_D bound to: 5'b01101 
+	Parameter ap_const_lv5_E bound to: 5'b01110 
+	Parameter ap_const_lv5_F bound to: 5'b01111 
+	Parameter ap_const_lv5_10 bound to: 5'b10000 
+	Parameter ap_const_lv5_11 bound to: 5'b10001 
+	Parameter ap_const_lv5_12 bound to: 5'b10010 
+	Parameter ap_const_lv5_13 bound to: 5'b10011 
+	Parameter ap_const_lv5_14 bound to: 5'b10100 
+	Parameter ap_const_lv5_15 bound to: 5'b10101 
+	Parameter ap_const_lv5_16 bound to: 5'b10110 
+	Parameter ap_const_lv5_17 bound to: 5'b10111 
+	Parameter ap_const_lv5_18 bound to: 5'b11000 
+	Parameter ap_const_lv5_19 bound to: 5'b11001 
+	Parameter ap_const_lv5_1A bound to: 5'b11010 
+	Parameter ap_const_lv5_1B bound to: 5'b11011 
+	Parameter ap_const_lv5_1C bound to: 5'b11100 
+	Parameter ap_const_lv5_1D bound to: 5'b11101 
+	Parameter ap_const_lv5_1E bound to: 5'b11110 
+	Parameter ap_const_lv5_1F bound to: 5'b11111 
+	Parameter ap_const_lv4_8 bound to: 4'b1000 
+	Parameter ap_const_lv4_1 bound to: 4'b0001 
+	Parameter ap_const_lv32_20 bound to: 32 - type: integer 
+	Parameter ap_const_lv4_A bound to: 4'b1010 
+	Parameter ap_const_lv4_7 bound to: 4'b0111 
+	Parameter ap_const_lv64_1 bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_const_lv32_FFFFFFF6 bound to: -10 - type: integer 
+	Parameter ap_const_lv64_0 bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:420]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_buf_2d_V_0' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:57]
+	Parameter DataWidth bound to: 96 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_buf_2d_V_0_ram' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:9]
+	Parameter DWIDTH bound to: 96 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:24]
+INFO: [Synth 8-3876] $readmem data file './spk_packet_tx_buf_2d_V_0_ram.dat' is read successfully [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:27]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_buf_2d_V_0_ram' (1#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:9]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_buf_2d_V_0' (2#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_buf_2d_V_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_4_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_4_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 4 - type: integer 
+	Parameter din2_WIDTH bound to: 4 - type: integer 
+	Parameter din3_WIDTH bound to: 4 - type: integer 
+	Parameter din4_WIDTH bound to: 4 - type: integer 
+	Parameter din5_WIDTH bound to: 4 - type: integer 
+	Parameter din6_WIDTH bound to: 4 - type: integer 
+	Parameter din7_WIDTH bound to: 4 - type: integer 
+	Parameter din8_WIDTH bound to: 4 - type: integer 
+	Parameter din9_WIDTH bound to: 4 - type: integer 
+	Parameter din10_WIDTH bound to: 4 - type: integer 
+	Parameter din11_WIDTH bound to: 4 - type: integer 
+	Parameter din12_WIDTH bound to: 4 - type: integer 
+	Parameter din13_WIDTH bound to: 4 - type: integer 
+	Parameter din14_WIDTH bound to: 4 - type: integer 
+	Parameter din15_WIDTH bound to: 4 - type: integer 
+	Parameter din16_WIDTH bound to: 4 - type: integer 
+	Parameter din17_WIDTH bound to: 4 - type: integer 
+	Parameter din18_WIDTH bound to: 4 - type: integer 
+	Parameter din19_WIDTH bound to: 4 - type: integer 
+	Parameter din20_WIDTH bound to: 4 - type: integer 
+	Parameter din21_WIDTH bound to: 4 - type: integer 
+	Parameter din22_WIDTH bound to: 4 - type: integer 
+	Parameter din23_WIDTH bound to: 4 - type: integer 
+	Parameter din24_WIDTH bound to: 4 - type: integer 
+	Parameter din25_WIDTH bound to: 4 - type: integer 
+	Parameter din26_WIDTH bound to: 4 - type: integer 
+	Parameter din27_WIDTH bound to: 4 - type: integer 
+	Parameter din28_WIDTH bound to: 4 - type: integer 
+	Parameter din29_WIDTH bound to: 4 - type: integer 
+	Parameter din30_WIDTH bound to: 4 - type: integer 
+	Parameter din31_WIDTH bound to: 4 - type: integer 
+	Parameter din32_WIDTH bound to: 4 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_4_1' (3#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_4_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_2_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_2_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 2 - type: integer 
+	Parameter din2_WIDTH bound to: 2 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter din5_WIDTH bound to: 2 - type: integer 
+	Parameter din6_WIDTH bound to: 2 - type: integer 
+	Parameter din7_WIDTH bound to: 2 - type: integer 
+	Parameter din8_WIDTH bound to: 2 - type: integer 
+	Parameter din9_WIDTH bound to: 2 - type: integer 
+	Parameter din10_WIDTH bound to: 2 - type: integer 
+	Parameter din11_WIDTH bound to: 2 - type: integer 
+	Parameter din12_WIDTH bound to: 2 - type: integer 
+	Parameter din13_WIDTH bound to: 2 - type: integer 
+	Parameter din14_WIDTH bound to: 2 - type: integer 
+	Parameter din15_WIDTH bound to: 2 - type: integer 
+	Parameter din16_WIDTH bound to: 2 - type: integer 
+	Parameter din17_WIDTH bound to: 2 - type: integer 
+	Parameter din18_WIDTH bound to: 2 - type: integer 
+	Parameter din19_WIDTH bound to: 2 - type: integer 
+	Parameter din20_WIDTH bound to: 2 - type: integer 
+	Parameter din21_WIDTH bound to: 2 - type: integer 
+	Parameter din22_WIDTH bound to: 2 - type: integer 
+	Parameter din23_WIDTH bound to: 2 - type: integer 
+	Parameter din24_WIDTH bound to: 2 - type: integer 
+	Parameter din25_WIDTH bound to: 2 - type: integer 
+	Parameter din26_WIDTH bound to: 2 - type: integer 
+	Parameter din27_WIDTH bound to: 2 - type: integer 
+	Parameter din28_WIDTH bound to: 2 - type: integer 
+	Parameter din29_WIDTH bound to: 2 - type: integer 
+	Parameter din30_WIDTH bound to: 2 - type: integer 
+	Parameter din31_WIDTH bound to: 2 - type: integer 
+	Parameter din32_WIDTH bound to: 2 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_2_1' (4#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_2_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'spk_packet_tx_mux_32to1_sel5_96_1' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_96_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 96 - type: integer 
+	Parameter din2_WIDTH bound to: 96 - type: integer 
+	Parameter din3_WIDTH bound to: 96 - type: integer 
+	Parameter din4_WIDTH bound to: 96 - type: integer 
+	Parameter din5_WIDTH bound to: 96 - type: integer 
+	Parameter din6_WIDTH bound to: 96 - type: integer 
+	Parameter din7_WIDTH bound to: 96 - type: integer 
+	Parameter din8_WIDTH bound to: 96 - type: integer 
+	Parameter din9_WIDTH bound to: 96 - type: integer 
+	Parameter din10_WIDTH bound to: 96 - type: integer 
+	Parameter din11_WIDTH bound to: 96 - type: integer 
+	Parameter din12_WIDTH bound to: 96 - type: integer 
+	Parameter din13_WIDTH bound to: 96 - type: integer 
+	Parameter din14_WIDTH bound to: 96 - type: integer 
+	Parameter din15_WIDTH bound to: 96 - type: integer 
+	Parameter din16_WIDTH bound to: 96 - type: integer 
+	Parameter din17_WIDTH bound to: 96 - type: integer 
+	Parameter din18_WIDTH bound to: 96 - type: integer 
+	Parameter din19_WIDTH bound to: 96 - type: integer 
+	Parameter din20_WIDTH bound to: 96 - type: integer 
+	Parameter din21_WIDTH bound to: 96 - type: integer 
+	Parameter din22_WIDTH bound to: 96 - type: integer 
+	Parameter din23_WIDTH bound to: 96 - type: integer 
+	Parameter din24_WIDTH bound to: 96 - type: integer 
+	Parameter din25_WIDTH bound to: 96 - type: integer 
+	Parameter din26_WIDTH bound to: 96 - type: integer 
+	Parameter din27_WIDTH bound to: 96 - type: integer 
+	Parameter din28_WIDTH bound to: 96 - type: integer 
+	Parameter din29_WIDTH bound to: 96 - type: integer 
+	Parameter din30_WIDTH bound to: 96 - type: integer 
+	Parameter din31_WIDTH bound to: 96 - type: integer 
+	Parameter din32_WIDTH bound to: 96 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 96 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx_mux_32to1_sel5_96_1' (5#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx_mux_32to1_sel5_96_1.v:11]
+INFO: [Synth 8-4471] merging register 'out_post_V_data_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2383]
+INFO: [Synth 8-4471] merging register 'out_post_V_id_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2384]
+INFO: [Synth 8-4471] merging register 'out_post_V_last_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2385]
+INFO: [Synth 8-4471] merging register 'out_post_V_user_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2386]
+INFO: [Synth 8-4471] merging register 'out_pre_V_data_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2387]
+INFO: [Synth 8-4471] merging register 'out_pre_V_id_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2388]
+INFO: [Synth 8-4471] merging register 'out_pre_V_last_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2389]
+INFO: [Synth 8-4471] merging register 'out_pre_V_user_V_1_areset_d_reg' into 'mua_stream_V_user_0_areset_d_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2390]
+INFO: [Synth 8-256] done synthesizing module 'spk_packet_tx' (6#1) [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:12]
+WARNING: [Synth 8-3331] design spk_packet_tx_buf_2d_V_0 has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1173.273 ; gain = 296.102 ; free physical = 108111 ; free virtual = 129040
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1173.273 ; gain = 296.102 ; free physical = 108111 ; free virtual = 129040
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+Finished Parsing XDC File [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1521.289 ; gain = 3.000 ; free physical = 107818 ; free virtual = 128750
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107987 ; free virtual = 128813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'buf_2d_V_10_addr_reg_2790_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:826]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_11_addr_reg_2795_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:842]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_12_addr_reg_2800_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:858]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_13_addr_reg_2805_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:874]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_14_addr_reg_2810_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:890]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_15_addr_reg_2815_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:906]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_16_addr_reg_2820_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:922]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_17_addr_reg_2825_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:938]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_18_addr_reg_2830_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:954]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_19_addr_reg_2835_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:970]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_1_addr_reg_2745_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:682]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_20_addr_reg_2840_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:986]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_21_addr_reg_2845_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1002]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_22_addr_reg_2850_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1018]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_23_addr_reg_2855_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1034]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_24_addr_reg_2860_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1050]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_25_addr_reg_2865_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1066]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_26_addr_reg_2870_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1082]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_27_addr_reg_2875_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1098]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_28_addr_reg_2880_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1114]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_29_addr_reg_2885_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1130]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_2_addr_reg_2750_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:698]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_30_addr_reg_2890_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1146]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_31_addr_reg_2895_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1162]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_3_addr_reg_2755_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:714]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_4_addr_reg_2760_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:730]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_5_addr_reg_2765_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:746]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_6_addr_reg_2770_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:762]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_7_addr_reg_2775_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:778]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_8_addr_reg_2780_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:794]
+INFO: [Synth 8-4471] merging register 'buf_2d_V_9_addr_reg_2785_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:810]
+INFO: [Synth 8-4471] merging register 'tmp_id_V_reg_2718_reg[4:0]' into 'buf_2d_V_0_addr_reg_2740_reg[4:0]' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:2337]
+INFO: [Synth 8-4471] merging register 'out_post_V_id_V_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1541]
+INFO: [Synth 8-4471] merging register 'out_post_V_last_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1553]
+INFO: [Synth 8-4471] merging register 'out_post_V_user_V_1_mVld_reg' into 'out_post_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1565]
+INFO: [Synth 8-4471] merging register 'out_pre_V_id_V_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1589]
+INFO: [Synth 8-4471] merging register 'out_pre_V_last_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1601]
+INFO: [Synth 8-4471] merging register 'out_pre_V_user_V_1_mVld_reg' into 'out_pre_V_data_V_1_mVld_reg' [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/impl/verilog/spk_packet_tx.v:1613]
+INFO: [Synth 8-5544] ROM "tmp_10_fu_2369_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_13_fu_2357_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_10_fu_2369_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_13_fu_2357_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt_A_V_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_10" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_12" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_14" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_15" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_16" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_17" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_18" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_20" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_21" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_22" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_23" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_24" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_25" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_26" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_27" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_28" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_29" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_30" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_31" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_7" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_A_9" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128808
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 71    
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 33    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 32    
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 63    
+	   3 Input      4 Bit        Muxes := 32    
+	   2 Input      3 Bit        Muxes := 68    
+	   2 Input      2 Bit        Muxes := 31    
+	   3 Input      2 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 74    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spk_packet_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 39    
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 33    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 32    
+	   2 Input      4 Bit        Muxes := 32    
+	   2 Input      3 Bit        Muxes := 68    
+	   3 Input      2 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 74    
+Module spk_packet_tx_buf_2d_V_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               96 Bit    Registers := 1     
+Module spk_packet_tx_mux_32to1_sel5_4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 31    
+Module spk_packet_tx_mux_32to1_sel5_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+Module spk_packet_tx_mux_32to1_sel5_96_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107983 ; free virtual = 128809
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name   | RTL Object                                           | Inference      | Size (Depth x Width) | Primitives    | 
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+|spk_packet_tx | buf_2d_V_1_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_2_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_3_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_4_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_5_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_6_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_7_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_8_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_9_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_10_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_11_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_12_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_13_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_14_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_15_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_16_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_17_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_18_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_19_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_20_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_21_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_22_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_23_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_24_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_25_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_26_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_27_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_28_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_29_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_30_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_31_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg | User Attribute | 32 x 96              | RAM32M x 16   | 
+|spk_packet_tx | buf_2d_V_0_U/spk_packet_tx_buf_2d_V_0_ram_U/ram_reg  | User Attribute | 32 x 96              | RAM32M x 16   | 
++--------------+------------------------------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[0]' (FDE) to 't_V_reg_2735_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[0]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[1]' (FDE) to 't_V_reg_2735_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[2]' (FDE) to 't_V_reg_2735_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[3]' (FDE) to 't_V_reg_2735_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tmp_user_reg_2713_reg[4]' (FDE) to 't_V_reg_2735_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[0]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[1]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[2]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[3]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[4]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[1]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[2]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[3]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[4]' (FDE) to 'ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[32]' (FDE) to 'tmp_9_reg_3060_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_pre_V_user_V_1_data_reg_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (ap_CS_fsm_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (out_pre_V_user_V_1_data_reg_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (tmp_user_reg_2713_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter2_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[1]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[2]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[3]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_user_reg_2713_pp0_iter3_reg[4]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[32]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_10_reg_3080_pp0_iter4_reg[0]) is unused and will be removed from module spk_packet_tx.
+WARNING: [Synth 8-3332] Sequential element (ap_reg_ppstg_tmp_4_reg_3076_pp0_iter4_reg[0]) is unused and will be removed from module spk_packet_tx.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107981 ; free virtual = 128802
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107981 ; free virtual = 128802
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107970 ; free virtual = 128797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1521.289 ; gain = 644.117 ; free physical = 107941 ; free virtual = 128769
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107914 ; free virtual = 128742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|spk_packet_tx | ap_reg_ppstg_tmp_data_V_1_reg_2729_pp0_iter3_reg[95] | 3      | 95    | NO           | NO                 | NO                | 95     | 0       | 
+|spk_packet_tx | ap_reg_ppstg_tmp_user_reg_2713_pp0_iter4_reg[31]     | 5      | 27    | NO           | NO                 | YES               | 27     | 0       | 
+|spk_packet_tx | ap_reg_ppstg_t_V_reg_2735_pp0_iter3_reg[0]           | 3      | 5     | NO           | NO                 | YES               | 5      | 0       | 
++--------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |    34|
+|3     |LUT2   |    14|
+|4     |LUT3   |   157|
+|5     |LUT4   |    50|
+|6     |LUT5   |   125|
+|7     |LUT6   |  1090|
+|8     |MUXF7  |   408|
+|9     |RAM32M |   512|
+|10    |SRL16E |   127|
+|11    |FDRE   |  7013|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+----------------------------------+------+
+|      |Instance                               |Module                            |Cells |
++------+---------------------------------------+----------------------------------+------+
+|1     |top                                    |                                  |  9538|
+|2     |  buf_2d_V_0_U                         |spk_packet_tx_buf_2d_V_0          |   122|
+|3     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_61   |   122|
+|4     |  buf_2d_V_10_U                        |spk_packet_tx_buf_2d_V_0_0        |   113|
+|5     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_60   |   113|
+|6     |  buf_2d_V_11_U                        |spk_packet_tx_buf_2d_V_0_1        |   113|
+|7     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_59   |   113|
+|8     |  buf_2d_V_12_U                        |spk_packet_tx_buf_2d_V_0_2        |   113|
+|9     |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_58   |   113|
+|10    |  buf_2d_V_13_U                        |spk_packet_tx_buf_2d_V_0_3        |   113|
+|11    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_57   |   113|
+|12    |  buf_2d_V_14_U                        |spk_packet_tx_buf_2d_V_0_4        |   113|
+|13    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_56   |   113|
+|14    |  buf_2d_V_15_U                        |spk_packet_tx_buf_2d_V_0_5        |   113|
+|15    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_55   |   113|
+|16    |  buf_2d_V_16_U                        |spk_packet_tx_buf_2d_V_0_6        |   113|
+|17    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_54   |   113|
+|18    |  buf_2d_V_17_U                        |spk_packet_tx_buf_2d_V_0_7        |   113|
+|19    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_53   |   113|
+|20    |  buf_2d_V_18_U                        |spk_packet_tx_buf_2d_V_0_8        |   113|
+|21    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_52   |   113|
+|22    |  buf_2d_V_19_U                        |spk_packet_tx_buf_2d_V_0_9        |   113|
+|23    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_51   |   113|
+|24    |  buf_2d_V_1_U                         |spk_packet_tx_buf_2d_V_0_10       |   114|
+|25    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_50   |   114|
+|26    |  buf_2d_V_20_U                        |spk_packet_tx_buf_2d_V_0_11       |   113|
+|27    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_49   |   113|
+|28    |  buf_2d_V_21_U                        |spk_packet_tx_buf_2d_V_0_12       |   113|
+|29    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_48   |   113|
+|30    |  buf_2d_V_22_U                        |spk_packet_tx_buf_2d_V_0_13       |   113|
+|31    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_47   |   113|
+|32    |  buf_2d_V_23_U                        |spk_packet_tx_buf_2d_V_0_14       |   113|
+|33    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_46   |   113|
+|34    |  buf_2d_V_24_U                        |spk_packet_tx_buf_2d_V_0_15       |   113|
+|35    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_45   |   113|
+|36    |  buf_2d_V_25_U                        |spk_packet_tx_buf_2d_V_0_16       |   113|
+|37    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_44   |   113|
+|38    |  buf_2d_V_26_U                        |spk_packet_tx_buf_2d_V_0_17       |   113|
+|39    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_43   |   113|
+|40    |  buf_2d_V_27_U                        |spk_packet_tx_buf_2d_V_0_18       |   113|
+|41    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_42   |   113|
+|42    |  buf_2d_V_28_U                        |spk_packet_tx_buf_2d_V_0_19       |   113|
+|43    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_41   |   113|
+|44    |  buf_2d_V_29_U                        |spk_packet_tx_buf_2d_V_0_20       |   113|
+|45    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_40   |   113|
+|46    |  buf_2d_V_2_U                         |spk_packet_tx_buf_2d_V_0_21       |   114|
+|47    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_39   |   114|
+|48    |  buf_2d_V_30_U                        |spk_packet_tx_buf_2d_V_0_22       |   113|
+|49    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_38   |   113|
+|50    |  buf_2d_V_31_U                        |spk_packet_tx_buf_2d_V_0_23       |   113|
+|51    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_37   |   113|
+|52    |  buf_2d_V_3_U                         |spk_packet_tx_buf_2d_V_0_24       |   114|
+|53    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_36   |   114|
+|54    |  buf_2d_V_4_U                         |spk_packet_tx_buf_2d_V_0_25       |   113|
+|55    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_35   |   113|
+|56    |  buf_2d_V_5_U                         |spk_packet_tx_buf_2d_V_0_26       |   113|
+|57    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_34   |   113|
+|58    |  buf_2d_V_6_U                         |spk_packet_tx_buf_2d_V_0_27       |   113|
+|59    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_33   |   113|
+|60    |  buf_2d_V_7_U                         |spk_packet_tx_buf_2d_V_0_28       |   113|
+|61    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_32   |   113|
+|62    |  buf_2d_V_8_U                         |spk_packet_tx_buf_2d_V_0_29       |   113|
+|63    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram_31   |   113|
+|64    |  buf_2d_V_9_U                         |spk_packet_tx_buf_2d_V_0_30       |   113|
+|65    |    spk_packet_tx_buf_2d_V_0_ram_U     |spk_packet_tx_buf_2d_V_0_ram      |   113|
+|66    |  spk_packet_tx_mux_32to1_sel5_2_1_U2  |spk_packet_tx_mux_32to1_sel5_2_1  |    32|
+|67    |  spk_packet_tx_mux_32to1_sel5_4_1_U1  |spk_packet_tx_mux_32to1_sel5_4_1  |   256|
+|68    |  spk_packet_tx_mux_32to1_sel5_96_1_U3 |spk_packet_tx_mux_32to1_sel5_96_1 |  1248|
++------+---------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.680 ; gain = 672.508 ; free physical = 107913 ; free virtual = 128741
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1549.680 ; gain = 195.398 ; free physical = 107913 ; free virtual = 128741
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1549.688 ; gain = 672.516 ; free physical = 107913 ; free virtual = 128741
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 512 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1581.695 ; gain = 630.027 ; free physical = 107957 ; free virtual = 128782
+report_utilization: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1613.711 ; gain = 0.000 ; free physical = 107952 ; free virtual = 128778
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 10:23:56 2016...

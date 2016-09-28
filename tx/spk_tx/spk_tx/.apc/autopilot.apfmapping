@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="spk_packet_tx.cpp" path="/vivado_proj/spk_packet_protocol/tx/spk_packet_tx.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="spk_packet_tx_test.cpp" path="/vivado_proj/spk_packet_protocol/tx/spk_packet_tx_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,253 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'spk_packet_rx'" level="0">
+<item name = "Date">Sun Sep 25 20:40:22 2016
+</item>
+<item name = "Version">2016.1 (Build 1538259 on Fri Apr 08 16:12:49 MDT 2016)</item>
+<item name = "Project">spk_rx</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325tffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">4.00</item>
+<item name = "Clock uncertainty (ns)">0.50</item>
+<item name = "Estimated clock period (ns)">3.35</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4, 31, 5, 32, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- write_loop">19, 19, 2, 1, 1, 19, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 1, -, -</column>
+<column name="Expression">-, -, 0, 52</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 1, 0, 0</column>
+<column name="Memory">6, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 384</column>
+<column name="Register">-, -, 678, -</column>
+<specialColumn name="Available">890, 840, 407600, 203800</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="spk_packet_rx_mul_6ns_6ns_11_3_U1">spk_packet_rx_mul_6ns_6ns_11_3, 0, 1, 0, 0</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_U2">spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3, i0 * i1 + i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="spk_V_U">spk_packet_rx_spk_V, 6, 0, 0, 608, 96, 1, 58368</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="j_fu_258_p2">+, 0, 0, 5, 5, 1</column>
+<column name="tmp_3_fu_234_p2">+, 0, 0, 11, 11, 11</column>
+<column name="tmp_4_fu_248_p2">+, 0, 0, 11, 11, 11</column>
+<column name="ap_sig_401">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_440">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_477">and, 0, 0, 1, 1, 1</column>
+<column name="grp_nbreadreq_fu_102_p6">and, 0, 0, 1, 1, 1</column>
+<column name="grp_nbreadreq_fu_76_p6">and, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_data_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_id_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_last_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_user_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_data_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_id_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_last_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_user_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="time_stamp_V_0_vld_out">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond_fu_264_p2">icmp, 0, 0, 2, 5, 5</column>
+<column name="post_in_V_data_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_id_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_last_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="post_in_V_user_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_data_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_id_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_last_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="pre_in_V_user_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+<column name="time_stamp_V_0_in_rdy">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">6, 14, 1, 14</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_spk_out_stream_TREADY">1, 2, 1, 2</column>
+<column name="j1_phi_fu_180_p4">5, 2, 5, 10</column>
+<column name="j1_reg_176">5, 2, 5, 10</column>
+<column name="post_in_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="post_in_V_data_V_0_data_out">96, 2, 96, 192</column>
+<column name="post_in_V_data_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="post_in_V_id_V_0_data_out">6, 2, 6, 12</column>
+<column name="post_in_V_id_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="post_in_V_last_0_data_out">1, 2, 1, 2</column>
+<column name="post_in_V_last_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="post_in_V_user_V_0_data_out">5, 2, 5, 10</column>
+<column name="post_in_V_user_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="pre_in_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="pre_in_V_data_V_0_data_out">96, 2, 96, 192</column>
+<column name="pre_in_V_data_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="pre_in_V_id_V_0_data_out">6, 2, 6, 12</column>
+<column name="pre_in_V_id_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="pre_in_V_last_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="pre_in_V_user_V_0_data_out">5, 2, 5, 10</column>
+<column name="pre_in_V_user_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="spk_V_address0">10, 4, 10, 40</column>
+<column name="spk_V_d0">96, 3, 96, 288</column>
+<column name="spk_out_stream_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="time_stamp_V_0_data_out">32, 2, 32, 64</column>
+<column name="time_stamp_V_0_has_vld_data_reg_i">1, 3, 1, 3</column>
+<column name="time_stamp_V_TDATA_blk_n">1, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">13, 0, 13, 0</column>
+<column name="ap_reg_ioackin_spk_out_stream_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="empty_2_reg_313_0">5, 0, 5, 0</column>
+<column name="empty_2_reg_313_1">1, 0, 1, 0</column>
+<column name="empty_2_reg_313_2">6, 0, 6, 0</column>
+<column name="empty_2_reg_313_3">96, 0, 96, 0</column>
+<column name="empty_reg_282_0">5, 0, 5, 0</column>
+<column name="empty_reg_282_2">6, 0, 6, 0</column>
+<column name="empty_reg_282_3">96, 0, 96, 0</column>
+<column name="exitcond_reg_356">1, 0, 1, 0</column>
+<column name="j1_reg_176">5, 0, 5, 0</column>
+<column name="j_reg_351">5, 0, 5, 0</column>
+<column name="post_in_V_data_V_0_areset_d">1, 0, 1, 0</column>
+<column name="post_in_V_data_V_0_data_reg">96, 0, 96, 0</column>
+<column name="post_in_V_data_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="post_in_V_data_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="post_in_V_id_V_0_areset_d">1, 0, 1, 0</column>
+<column name="post_in_V_id_V_0_data_reg">6, 0, 6, 0</column>
+<column name="post_in_V_id_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="post_in_V_id_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="post_in_V_last_0_areset_d">1, 0, 1, 0</column>
+<column name="post_in_V_last_0_data_reg">1, 0, 1, 0</column>
+<column name="post_in_V_last_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="post_in_V_last_0_in_rdy">1, 0, 1, 0</column>
+<column name="post_in_V_user_V_0_areset_d">1, 0, 1, 0</column>
+<column name="post_in_V_user_V_0_data_reg">5, 0, 5, 0</column>
+<column name="post_in_V_user_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="post_in_V_user_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="pre_in_V_data_V_0_areset_d">1, 0, 1, 0</column>
+<column name="pre_in_V_data_V_0_data_reg">96, 0, 96, 0</column>
+<column name="pre_in_V_data_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="pre_in_V_data_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="pre_in_V_id_V_0_areset_d">1, 0, 1, 0</column>
+<column name="pre_in_V_id_V_0_data_reg">6, 0, 6, 0</column>
+<column name="pre_in_V_id_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="pre_in_V_id_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="pre_in_V_last_0_areset_d">1, 0, 1, 0</column>
+<column name="pre_in_V_last_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="pre_in_V_last_0_in_rdy">1, 0, 1, 0</column>
+<column name="pre_in_V_user_V_0_areset_d">1, 0, 1, 0</column>
+<column name="pre_in_V_user_V_0_data_reg">5, 0, 5, 0</column>
+<column name="pre_in_V_user_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="pre_in_V_user_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="time_stamp_V_0_areset_d">1, 0, 1, 0</column>
+<column name="time_stamp_V_0_data_reg">32, 0, 32, 0</column>
+<column name="time_stamp_V_0_has_vld_data_reg">1, 0, 1, 0</column>
+<column name="time_stamp_V_0_in_rdy">1, 0, 1, 0</column>
+<column name="tmp_2_reg_331">11, 0, 11, 0</column>
+<column name="tmp_6_reg_341">32, 0, 32, 0</column>
+<column name="tmp_data_V_reg_294">96, 0, 96, 0</column>
+<column name="tmp_id_V_reg_321">6, 0, 6, 0</column>
+<column name="tmp_reg_278">1, 0, 1, 0</column>
+<column name="tmp_s_reg_304">11, 0, 11, 0</column>
+<column name="tmp_user_V_reg_289">5, 0, 5, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, spk_packet_rx, return value</column>
+<column name="pre_in_TUSER">in, 5, axis, pre_in_V_user_V, pointer</column>
+<column name="pre_in_TVALID">in, 1, axis, pre_in_V_data_V, pointer</column>
+<column name="pre_in_TREADY">out, 1, axis, pre_in_V_data_V, pointer</column>
+<column name="pre_in_TDATA">in, 96, axis, pre_in_V_data_V, pointer</column>
+<column name="pre_in_TLAST">in, 1, axis, pre_in_V_last, pointer</column>
+<column name="pre_in_TID">in, 6, axis, pre_in_V_id_V, pointer</column>
+<column name="post_in_TUSER">in, 5, axis, post_in_V_user_V, pointer</column>
+<column name="post_in_TVALID">in, 1, axis, post_in_V_data_V, pointer</column>
+<column name="post_in_TREADY">out, 1, axis, post_in_V_data_V, pointer</column>
+<column name="post_in_TDATA">in, 96, axis, post_in_V_data_V, pointer</column>
+<column name="post_in_TLAST">in, 1, axis, post_in_V_last, pointer</column>
+<column name="post_in_TID">in, 6, axis, post_in_V_id_V, pointer</column>
+<column name="time_stamp_V_TDATA">in, 32, axis, time_stamp_V, pointer</column>
+<column name="time_stamp_V_TVALID">in, 1, axis, time_stamp_V, pointer</column>
+<column name="time_stamp_V_TREADY">out, 1, axis, time_stamp_V, pointer</column>
+<column name="spk_out_stream_TID">out, 6, axis, spk_out_stream_V_id_V, pointer</column>
+<column name="spk_out_stream_TVALID">out, 1, axis, spk_out_stream_V_data_V, pointer</column>
+<column name="spk_out_stream_TREADY">in, 1, axis, spk_out_stream_V_data_V, pointer</column>
+<column name="spk_out_stream_TDATA">out, 96, axis, spk_out_stream_V_data_V, pointer</column>
+<column name="spk_out_stream_TUSER">out, 32, axis, spk_out_stream_V_user, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">3.35</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp.user.V', ../spk_packet_rx.cpp:24">extractvalue, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_6_cast', ../spk_packet_rx.cpp:26">zext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_3', ../spk_packet_rx.cpp:26">add, 1.30, 1.30, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_12_cast', ../spk_packet_rx.cpp:26">sext, 0.00, 1.30, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'spk_V_addr_1', ../spk_packet_rx.cpp:26">getelementptr, 0.00, 1.30, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="../spk_packet_rx.cpp:26">store, 2.05, 3.35, &apos;tmp.data.V&apos;, ../spk_packet_rx.cpp:24, -, -, -, -, -, &apos;spk_V&apos;, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

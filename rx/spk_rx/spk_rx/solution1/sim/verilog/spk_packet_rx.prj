@@ -1,0 +1,11 @@
+verilog xil_defaultlib "AESL_axi_s_post_in.v"
+verilog xil_defaultlib "spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3.v"
+verilog xil_defaultlib "spk_packet_rx.autotb.v"
+verilog xil_defaultlib "AESL_fifo.v"
+verilog xil_defaultlib "AESL_axi_s_spk_out_stream.v"
+verilog xil_defaultlib "spk_packet_rx_mul_6ns_6ns_11_3.v"
+verilog xil_defaultlib "AESL_axi_s_pre_in.v"
+verilog xil_defaultlib "AESL_axi_s_time_stamp_V.v"
+verilog xil_defaultlib "spk_packet_rx_spk_V.v"
+verilog xil_defaultlib "spk_packet_rx.v"
+

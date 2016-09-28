@@ -1,0 +1,214 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/gcc/bin/g++"
+   Compiling spk_packet_tx_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_spk_packet_tx.cpp
+   Compiling spk_packet_tx.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+ch=5, pts=0, pre=5, busy=0
+ch=5, pts=1, pre=37, busy=0
+ch=5, pts=2, pre=69, busy=0
+ch=5, pts=3, pre=101, busy=0
+ch=5, pts=4, pre=133, busy=0
+ch=5, pts=5, pre=165, busy=0
+ch=5, pts=6, pre=197, busy=0
+ch=5, pts=7, pre=229, busy=0
+ch=26, pts=0, pre=442, busy=0
+ch=26, pts=1, pre=474, busy=0
+ch=26, pts=2, pre=506, busy=0
+ch=26, pts=3, pre=538, busy=0
+ch=26, pts=4, pre=570, busy=0
+ch=26, pts=5, pre=602, busy=0
+ch=26, pts=6, pre=634, busy=0
+ch=26, pts=7, pre=666, busy=0
+ch=5, pts=8, post=261, busy=0, last=0
+ch=5, pts=9, post=293, busy=0, last=0
+ch=5, pts=10, post=325, busy=0, last=0
+ch=5, pts=11, post=357, busy=0, last=0
+ch=5, pts=12, post=389, busy=0, last=0
+ch=5, pts=13, post=421, busy=0, last=0
+ch=5, pts=14, post=453, busy=0, last=0
+ch=5, pts=15, post=485, busy=0, last=0
+ch=5, pts=16, post=517, busy=0, last=0
+ch=5, pts=17, post=549, busy=0, last=0
+ch=5, pts=18, post=581, busy=0, last=1
+ch=26, pts=8, post=698, busy=0, last=0
+ch=26, pts=9, post=730, busy=0, last=0
+ch=26, pts=10, post=762, busy=0, last=0
+ch=26, pts=11, post=794, busy=0, last=0
+ch=26, pts=12, post=826, busy=0, last=0
+ch=26, pts=13, post=858, busy=0, last=0
+ch=26, pts=14, post=890, busy=0, last=0
+ch=26, pts=15, post=922, busy=0, last=0
+ch=26, pts=16, post=954, busy=0, last=0
+ch=26, pts=17, post=986, busy=0, last=0
+ch=26, pts=18, post=1018, busy=0, last=1
+8
+21
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_spk_packet_tx_top -prj spk_packet_tx.prj --lib ieee_proposed=./ieee_proposed -s spk_packet_tx -debug wave 
+Multi-threading is on. Using 46 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx_mux_32to1_sel5_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spk_packet_tx_mux_32to1_sel5_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/AESL_axi_s_out_pre.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_pre
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_spk_packet_tx_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.autotb.v:159]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.autotb.v:160]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.autotb.v:187]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spk_packet_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx_mux_32to1_sel5_96_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spk_packet_tx_mux_32to1_sel5_96_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/AESL_axi_s_time_stamp_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_time_stamp_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx_buf_2d_V_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spk_packet_tx_buf_2d_V_0_ram
+INFO: [VRFC 10-311] analyzing module spk_packet_tx_buf_2d_V_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/AESL_axi_s_out_post.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_post
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/AESL_axi_s_mua_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_mua_stream
+INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx_mux_32to1_sel5_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spk_packet_tx_mux_32to1_sel5_2_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spk_packet_tx_buf_2d_V_0_ram
+Compiling module xil_defaultlib.spk_packet_tx_buf_2d_V_0(DataWid...
+Compiling module xil_defaultlib.spk_packet_tx_mux_32to1_sel5_4_1...
+Compiling module xil_defaultlib.spk_packet_tx_mux_32to1_sel5_2_1...
+Compiling module xil_defaultlib.spk_packet_tx_mux_32to1_sel5_96_...
+Compiling module xil_defaultlib.spk_packet_tx
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=96)
+Compiling module xil_defaultlib.AESL_axi_s_mua_stream
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_out_pre
+Compiling module xil_defaultlib.AESL_axi_s_out_post
+Compiling module xil_defaultlib.AESL_axi_s_time_stamp_V
+Compiling module xil_defaultlib.apatb_spk_packet_tx_top
+Built simulation snapshot spk_packet_tx
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/xsim.dir/spk_packet_tx/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 25 20:38:42 2016...
+
+****** xsim v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/spk_packet_tx/xsim_script.tcl
+# xsim {spk_packet_tx} -autoloadwcfg -tclbatch {spk_packet_tx.tcl}
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source spk_packet_tx.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set busy_group [add_wave_group busy(wire) -into $coutputgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/busy_V_ap_vld -into $busy_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/busy_V -into $busy_group -radix hex
+## set time_stamp_group [add_wave_group time_stamp(axis) -into $coutputgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/time_stamp_V_TREADY -into $time_stamp_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/time_stamp_V_TVALID -into $time_stamp_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/time_stamp_V_TDATA -into $time_stamp_group -radix hex
+## set out_post_group [add_wave_group out_post(axis) -into $coutputgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TDATA -into $out_post_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TLAST -into $out_post_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TID -into $out_post_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TREADY -into $out_post_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TVALID -into $out_post_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_post_TUSER -into $out_post_group -radix hex
+## set out_pre_group [add_wave_group out_pre(axis) -into $coutputgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TDATA -into $out_pre_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TLAST -into $out_pre_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TID -into $out_pre_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TREADY -into $out_pre_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TVALID -into $out_pre_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/out_pre_TUSER -into $out_pre_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set mua_stream_group [add_wave_group mua_stream(axis) -into $cinputgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/mua_stream_TDATA -into $mua_stream_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/mua_stream_TID -into $mua_stream_group -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/mua_stream_TREADY -into $mua_stream_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/mua_stream_TVALID -into $mua_stream_group -color #ffff00 -radix hex
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/mua_stream_TUSER -into $mua_stream_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_spk_packet_tx_top/AESL_inst_spk_packet_tx/ap_clk -into $clockgroup
+## save_wave_config spk_packet_tx.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10240 [0.00%] @ "110000"
+// RTL Simulation : 10240 / 10240 [0.00%] @ "41090000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 41106 ns : File "/vivado_proj/spk_packet_protocol/tx/spk_tx/spk_tx/solution1/sim/verilog/spk_packet_tx.autotb.v" Line 391
+run: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:21 . Memory (MB): peak = 260.332 ; gain = 0.000 ; free physical = 122225 ; free virtual = 130809
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 25 20:39:05 2016...
+ch=5, pts=0, pre=5, busy=0
+ch=5, pts=1, pre=37, busy=0
+ch=5, pts=2, pre=69, busy=0
+ch=5, pts=3, pre=101, busy=0
+ch=5, pts=4, pre=133, busy=0
+ch=5, pts=5, pre=165, busy=0
+ch=5, pts=6, pre=197, busy=0
+ch=5, pts=7, pre=229, busy=0
+ch=26, pts=0, pre=442, busy=0
+ch=26, pts=1, pre=474, busy=0
+ch=26, pts=2, pre=506, busy=0
+ch=26, pts=3, pre=538, busy=0
+ch=26, pts=4, pre=570, busy=0
+ch=26, pts=5, pre=602, busy=0
+ch=26, pts=6, pre=634, busy=0
+ch=26, pts=7, pre=666, busy=0
+ch=5, pts=8, post=261, busy=0, last=0
+ch=5, pts=9, post=293, busy=0, last=0
+ch=5, pts=10, post=325, busy=0, last=0
+ch=5, pts=11, post=357, busy=0, last=0
+ch=5, pts=12, post=389, busy=0, last=0
+ch=5, pts=13, post=421, busy=0, last=0
+ch=5, pts=14, post=453, busy=0, last=0
+ch=5, pts=15, post=485, busy=0, last=0
+ch=5, pts=16, post=517, busy=0, last=0
+ch=5, pts=17, post=549, busy=0, last=0
+ch=5, pts=18, post=581, busy=0, last=1
+ch=26, pts=8, post=698, busy=0, last=0
+ch=26, pts=9, post=730, busy=0, last=0
+ch=26, pts=10, post=762, busy=0, last=0
+ch=26, pts=11, post=794, busy=0, last=0
+ch=26, pts=12, post=826, busy=0, last=0
+ch=26, pts=13, post=858, busy=0, last=0
+ch=26, pts=14, post=890, busy=0, last=0
+ch=26, pts=15, post=922, busy=0, last=0
+ch=26, pts=16, post=954, busy=0, last=0
+ch=26, pts=17, post=986, busy=0, last=0
+ch=26, pts=18, post=1018, busy=0, last=1
+8
+21
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,42 @@
+make: 'csim.exe' is up to date.
+ch=5, pts=0, pre=5, busy=0
+ch=5, pts=1, pre=37, busy=0
+ch=5, pts=2, pre=69, busy=0
+ch=5, pts=3, pre=101, busy=0
+ch=5, pts=4, pre=133, busy=0
+ch=5, pts=5, pre=165, busy=0
+ch=5, pts=6, pre=197, busy=0
+ch=5, pts=7, pre=229, busy=0
+ch=26, pts=0, pre=442, busy=0
+ch=26, pts=1, pre=474, busy=0
+ch=26, pts=2, pre=506, busy=0
+ch=26, pts=3, pre=538, busy=0
+ch=26, pts=4, pre=570, busy=0
+ch=26, pts=5, pre=602, busy=0
+ch=26, pts=6, pre=634, busy=0
+ch=26, pts=7, pre=666, busy=0
+ch=5, pts=8, post=261, busy=0, last=0
+ch=5, pts=9, post=293, busy=0, last=0
+ch=5, pts=10, post=325, busy=0, last=0
+ch=5, pts=11, post=357, busy=0, last=0
+ch=5, pts=12, post=389, busy=0, last=0
+ch=5, pts=13, post=421, busy=0, last=0
+ch=5, pts=14, post=453, busy=0, last=0
+ch=5, pts=15, post=485, busy=0, last=0
+ch=5, pts=16, post=517, busy=0, last=0
+ch=5, pts=17, post=549, busy=0, last=0
+ch=5, pts=18, post=581, busy=0, last=1
+ch=26, pts=8, post=698, busy=0, last=0
+ch=26, pts=9, post=730, busy=0, last=0
+ch=26, pts=10, post=762, busy=0, last=0
+ch=26, pts=11, post=794, busy=0, last=0
+ch=26, pts=12, post=826, busy=0, last=0
+ch=26, pts=13, post=858, busy=0, last=0
+ch=26, pts=14, post=890, busy=0, last=0
+ch=26, pts=15, post=922, busy=0, last=0
+ch=26, pts=16, post=954, busy=0, last=0
+ch=26, pts=17, post=986, busy=0, last=0
+ch=26, pts=18, post=1018, busy=0, last=1
+8
+21
+INFO: [SIM 1] CSim done with 0 errors.
