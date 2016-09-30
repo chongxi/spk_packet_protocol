@@ -39446,6 +39446,7 @@ struct spk_stream{
  ch_type id;
  int user;
  ap_data data;
+ ap_uint<16> dest;
 };
 
 enum rxState {IDLE=0, PRE, POST};
@@ -39485,6 +39486,7 @@ _ssdm_op_SpecInterface(&time_stamp, "axis", 1, 1, 0, 0, "", "", "", 0, 0, 0, 0, 
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, ""); _ssdm_SpecLoopRewind(0, "");
  out.id = ch;
     out.user = frameNo;
+    out.dest = j+19*ch;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }

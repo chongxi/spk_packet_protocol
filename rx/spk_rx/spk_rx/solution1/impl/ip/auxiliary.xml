@@ -13,6 +13,7 @@
   <xd:arg xd:name="spk_out_stream.id" xd:originalName="spk_out_stream" xd:direction="out" xd:interfaceRef="spk_out_stream" xd:busTypeRef="axis" xd:dataWidth="6"/>
   <xd:arg xd:name="spk_out_stream.user" xd:originalName="spk_out_stream" xd:direction="out" xd:interfaceRef="spk_out_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="spk_out_stream.data" xd:originalName="spk_out_stream" xd:direction="out" xd:interfaceRef="spk_out_stream" xd:busTypeRef="axis" xd:dataWidth="96"/>
+  <xd:arg xd:name="spk_out_stream.dest" xd:originalName="spk_out_stream" xd:direction="out" xd:interfaceRef="spk_out_stream" xd:busTypeRef="axis" xd:dataWidth="16"/>
   <xd:latencyEstimates xd:best-case="4" xd:worst-case="31" xd:average-case="13"/>
-  <xd:resourceEstimates xd:LUT="436" xd:FF="678" xd:BRAM="6" xd:DSP="2"/>
+  <xd:resourceEstimates xd:LUT="436" xd:FF="689" xd:BRAM="6" xd:DSP="2"/>
 </xd:acceleratorMap>

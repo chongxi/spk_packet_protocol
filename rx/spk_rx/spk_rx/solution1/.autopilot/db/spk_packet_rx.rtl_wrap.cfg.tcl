@@ -147,7 +147,7 @@ set DataType2 "int"
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
 set PortName3 "spk_out_stream"
-set BitWidth3 "192"
+set BitWidth3 "256"
 set ArrayOpt3 ""
 set Const3 "0"
 set Volatile3 "0"
@@ -192,6 +192,18 @@ set Interface32 "wire"
 set DataType32 "[list ap_uint 96 ]"
 set Port32 [list $PortName32 $Interface32 $DataType32 $Pointer32 $Dims32 $Const32 $Volatile32 $ArrayOpt32]
 lappend structMem3 $Port32
+set PortName33 "dest"
+set BitWidth33 "16"
+set ArrayOpt33 ""
+set Const33 "0"
+set Volatile33 "0"
+set Pointer33 "0"
+set Reference33 "0"
+set Dims33 [list 0]
+set Interface33 "wire"
+set DataType33 "[list ap_uint 16 ]"
+set Port33 [list $PortName33 $Interface33 $DataType33 $Pointer33 $Dims33 $Const33 $Volatile33 $ArrayOpt33]
+lappend structMem3 $Port33
 set structParameter3 [list ]
 set structArgument3 [list ]
 set NameSpace3 [list ]

@@ -9,6 +9,7 @@
 typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 
+
 struct spk_struct{
 	ap_uint<5>  user;       // pos
 	bool        last;       // last
@@ -21,6 +22,7 @@ struct spk_stream{
 	ch_type     id;
 	int         user;
 	ap_data     data;
+	ap_uint<16>  dest;
 };
 
 enum rxState {IDLE=0, PRE, POST};

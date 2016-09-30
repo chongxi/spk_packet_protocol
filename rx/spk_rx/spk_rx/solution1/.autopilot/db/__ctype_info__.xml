@@ -119,5 +119,15 @@
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
 </RtlPorts>
+<RtlPorts>
+<name>spk_out_stream_V_dest_V</name>
+<CType>
+<TypeName>ap_uint 16</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
 </InterfaceSummary>
 

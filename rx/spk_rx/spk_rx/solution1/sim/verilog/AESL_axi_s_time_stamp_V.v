@@ -60,7 +60,7 @@ module AESL_axi_s_time_stamp_V (
         end
     endfunction
     
-    function [191:0] read_token(input integer fp);
+    function [215:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -69,8 +69,8 @@ module AESL_axi_s_time_stamp_V (
         end
     endfunction
     
-    function [191:0] rm_0x(input [191:0] token);
-        reg [191:0] token_tmp;
+    function [215:0] rm_0x(input [215:0] token);
+        reg [215:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -88,10 +88,10 @@ module AESL_axi_s_time_stamp_V (
     
     initial begin : AXI_stream_driver_time_stamp_V_TDATA
         integer fp;
-        reg [191:0] token;
+        reg [215:0] token;
         reg [32 - 1:0] data;
         integer fp_ingress_status;
-        reg [191:0] token_ingress_status;
+        reg [215:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;

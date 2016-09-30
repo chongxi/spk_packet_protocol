@@ -39446,6 +39446,7 @@ struct spk_stream{
  ch_type id;
  int user;
  ap_data data;
+ ap_uint<16> dest;
 };
 
 enum rxState {IDLE=0, PRE, POST};
@@ -39485,6 +39486,7 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 #pragma HLS PIPELINE rewind
  out.id = ch;
     out.user = frameNo;
+    out.dest = j+19*ch;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }

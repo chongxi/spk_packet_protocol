@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
-| Date         : Sun Sep 25 20:43:54 2016
+| Date         : Thu Sep 29 16:28:54 2016
 | Host         : laic-ws1 running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_drc -file spk_packet_rx_drc_routed.rpt -pb spk_packet_rx_drc_routed.pb
 | Design       : spk_packet_rx
@@ -42,7 +42,7 @@ Related violations: <none>
 
 DPIP-1#1 Warning
 Input pipelining  
-DSP tmp_s_reg_304_reg input tmp_s_reg_304_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP tmp_s_reg_313_reg input tmp_s_reg_313_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 

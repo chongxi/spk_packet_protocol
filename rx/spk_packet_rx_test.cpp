@@ -77,15 +77,16 @@ int main()
 
 
 	// output  /////////////////////////////////////////////////////////////////////////////////
-	int ch, frameNo;
+	int ch, frameNo, n;
 	ap_data data;
 	spk_stream result;
 	while(!spk_out_stream.empty()){
 		result = spk_out_stream.read();
 		ch = result.id;
 		frameNo = result.user;
+		n = result.dest;
 		data = result.data;
-		cout << frameNo << '\t' << ch << '\t' << data << endl;
+		cout << n << '\t' << frameNo << '\t' << ch << '\t' << data << endl;
 	}
 
 	return 0;

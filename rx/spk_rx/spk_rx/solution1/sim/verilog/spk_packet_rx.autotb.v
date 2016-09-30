@@ -29,6 +29,7 @@
 `define AESL_DEPTH_spk_out_stream_V_id_V 1
 `define AESL_DEPTH_spk_out_stream_V_user 1
 `define AESL_DEPTH_spk_out_stream_V_data_V 1
+`define AESL_DEPTH_spk_out_stream_V_dest_V 1
 `define AUTOTB_TVIN_pre_in_V_user_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_pre_in_V_user_V.dat"
 `define AUTOTB_TVIN_pre_in_V_last  "../tv/cdatafile/c.spk_packet_rx.autotvin_pre_in_V_last.dat"
 `define AUTOTB_TVIN_pre_in_V_id_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_pre_in_V_id_V.dat"
@@ -41,6 +42,7 @@
 `define AUTOTB_TVIN_spk_out_stream_V_id_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_id_V.dat"
 `define AUTOTB_TVIN_spk_out_stream_V_user  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_user.dat"
 `define AUTOTB_TVIN_spk_out_stream_V_data_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_data_V.dat"
+`define AUTOTB_TVIN_spk_out_stream_V_dest_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_dest_V.dat"
 `define AUTOTB_TVIN_pre_in_V_user_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_pre_in_V_user_V.dat"
 `define AUTOTB_TVIN_pre_in_V_last_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_pre_in_V_last.dat"
 `define AUTOTB_TVIN_pre_in_V_id_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_pre_in_V_id_V.dat"
@@ -53,12 +55,15 @@
 `define AUTOTB_TVIN_spk_out_stream_V_id_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_spk_out_stream_V_id_V.dat"
 `define AUTOTB_TVIN_spk_out_stream_V_user_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_spk_out_stream_V_user.dat"
 `define AUTOTB_TVIN_spk_out_stream_V_data_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_spk_out_stream_V_data_V.dat"
+`define AUTOTB_TVIN_spk_out_stream_V_dest_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvin_spk_out_stream_V_dest_V.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_id_V  "../tv/cdatafile/c.spk_packet_rx.autotvout_spk_out_stream_V_id_V.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_user  "../tv/cdatafile/c.spk_packet_rx.autotvout_spk_out_stream_V_user.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_data_V  "../tv/cdatafile/c.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
+`define AUTOTB_TVOUT_spk_out_stream_V_dest_V  "../tv/cdatafile/c.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_id_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_id_V.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_user_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_user.dat"
 `define AUTOTB_TVOUT_spk_out_stream_V_data_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
+`define AUTOTB_TVOUT_spk_out_stream_V_dest_V_out_wrapc  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 38;
@@ -76,10 +81,11 @@ parameter LENGTH_time_stamp_V = 1;
 parameter LENGTH_spk_out_stream_V_id_V = 19;
 parameter LENGTH_spk_out_stream_V_user = 19;
 parameter LENGTH_spk_out_stream_V_data_V = 19;
+parameter LENGTH_spk_out_stream_V_dest_V = 19;
 
 task read_token;
     input integer fp;
-    output reg [191 : 0] token;
+    output reg [215 : 0] token;
     integer ret;
     begin
         token = "";
@@ -114,13 +120,13 @@ wire  pre_in_TVALID;
 wire  pre_in_TREADY;
 wire  pre_in_TLAST;
 wire [5 : 0] pre_in_TID;
-wire [31 : 0] pre_in_TDATA;
+wire [95 : 0] pre_in_TDATA;
 wire [4 : 0] post_in_TUSER;
 wire  post_in_TVALID;
 wire  post_in_TREADY;
 wire  post_in_TLAST;
 wire [5 : 0] post_in_TID;
-wire [31 : 0] post_in_TDATA;
+wire [95 : 0] post_in_TDATA;
 wire [31 : 0] time_stamp_V_TDATA;
 wire  time_stamp_V_TVALID;
 wire  time_stamp_V_TREADY;
@@ -128,7 +134,8 @@ wire [5 : 0] spk_out_stream_TID;
 wire  spk_out_stream_TVALID;
 wire  spk_out_stream_TREADY;
 wire [31 : 0] spk_out_stream_TUSER;
-wire [31 : 0] spk_out_stream_TDATA;
+wire [95 : 0] spk_out_stream_TDATA;
+wire [15 : 0] spk_out_stream_TDEST;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -165,7 +172,8 @@ reg interface_done = 0;
     .spk_out_stream_TVALID(spk_out_stream_TVALID),
     .spk_out_stream_TREADY(spk_out_stream_TREADY),
     .spk_out_stream_TUSER(spk_out_stream_TUSER),
-    .spk_out_stream_TDATA(spk_out_stream_TDATA));
+    .spk_out_stream_TDATA(spk_out_stream_TDATA),
+    .spk_out_stream_TDEST(spk_out_stream_TDEST));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -197,6 +205,7 @@ assign AESL_continue = continue;
             end
         end
     end
+
 
 
 
@@ -342,6 +351,7 @@ AESL_axi_s_spk_out_stream AESL_AXI_S_spk_out_stream(
     .TRAN_spk_out_stream_TID(spk_out_stream_TID),
     .TRAN_spk_out_stream_TUSER(spk_out_stream_TUSER),
     .TRAN_spk_out_stream_TDATA(spk_out_stream_TDATA),
+    .TRAN_spk_out_stream_TDEST(spk_out_stream_TDEST),
     .TRAN_spk_out_stream_TVALID(axi_s_spk_out_stream_TVALID),
     .TRAN_spk_out_stream_TREADY(axi_s_spk_out_stream_TREADY),
     .ready(spk_out_stream_ready),
@@ -465,6 +475,9 @@ reg [31:0] size_spk_out_stream_V_user_backup;
 reg end_spk_out_stream_V_data_V;
 reg [31:0] size_spk_out_stream_V_data_V;
 reg [31:0] size_spk_out_stream_V_data_V_backup;
+reg end_spk_out_stream_V_dest_V;
+reg [31:0] size_spk_out_stream_V_dest_V;
+reg [31:0] size_spk_out_stream_V_dest_V_backup;
 
 initial begin : initial_process
     integer rand;
@@ -653,6 +666,36 @@ initial begin : dump_tvout_runtime_sign_spk_out_stream_V_data_V
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
     dump_tvout_finish_spk_out_stream_V_data_V = 1;
+end
+
+
+reg dump_tvout_finish_spk_out_stream_V_dest_V;
+
+initial begin : dump_tvout_runtime_sign_spk_out_stream_V_dest_V
+    integer fp;
+    dump_tvout_finish_spk_out_stream_V_dest_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_spk_out_stream_V_dest_V_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_spk_out_stream_V_dest_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_spk_out_stream_V_dest_V_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_spk_out_stream_V_dest_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_spk_out_stream_V_dest_V = 1;
 end
 
 

@@ -25,7 +25,7 @@ module AESL_axi_s_post_in (
     output [5 - 1:0] TRAN_post_in_TUSER,
     output TRAN_post_in_TLAST,
     output [6 - 1:0] TRAN_post_in_TID,
-    output [32 - 1:0] TRAN_post_in_TDATA,
+    output [96 - 1:0] TRAN_post_in_TDATA,
     output TRAN_post_in_TVALID,
     input TRAN_post_in_TREADY,
     input ready,
@@ -110,11 +110,11 @@ module AESL_axi_s_post_in (
     wire post_in_TDATA_full;
     wire post_in_TDATA_empty;
     reg post_in_TDATA_write_en;
-    reg [32 - 1:0] post_in_TDATA_write_data;
+    reg [96 - 1:0] post_in_TDATA_write_data;
     reg post_in_TDATA_read_en;
-    wire [32 - 1:0] post_in_TDATA_read_data;
+    wire [96 - 1:0] post_in_TDATA_read_data;
     
-    fifo #(1, 32) fifo_post_in_TDATA (
+    fifo #(1, 96) fifo_post_in_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(post_in_TDATA_write_en),
@@ -147,7 +147,7 @@ module AESL_axi_s_post_in (
         end
     endfunction
     
-    function [191:0] read_token(input integer fp);
+    function [215:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -156,8 +156,8 @@ module AESL_axi_s_post_in (
         end
     endfunction
     
-    function [191:0] rm_0x(input [191:0] token);
-        reg [191:0] token_tmp;
+    function [215:0] rm_0x(input [215:0] token);
+        reg [215:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -175,10 +175,10 @@ module AESL_axi_s_post_in (
     
     initial begin : AXI_stream_driver_post_in_TUSER
         integer fp;
-        reg [191:0] token;
+        reg [215:0] token;
         reg [5 - 1:0] data;
         integer fp_ingress_status;
-        reg [191:0] token_ingress_status;
+        reg [215:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -254,10 +254,10 @@ module AESL_axi_s_post_in (
     
     initial begin : AXI_stream_driver_post_in_TLAST
         integer fp;
-        reg [191:0] token;
+        reg [215:0] token;
         reg [1 - 1:0] data;
         integer fp_ingress_status;
-        reg [191:0] token_ingress_status;
+        reg [215:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -333,10 +333,10 @@ module AESL_axi_s_post_in (
     
     initial begin : AXI_stream_driver_post_in_TID
         integer fp;
-        reg [191:0] token;
+        reg [215:0] token;
         reg [6 - 1:0] data;
         integer fp_ingress_status;
-        reg [191:0] token_ingress_status;
+        reg [215:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -412,10 +412,10 @@ module AESL_axi_s_post_in (
     
     initial begin : AXI_stream_driver_post_in_TDATA
         integer fp;
-        reg [191:0] token;
-        reg [32 - 1:0] data;
+        reg [215:0] token;
+        reg [96 - 1:0] data;
         integer fp_ingress_status;
-        reg [191:0] token_ingress_status;
+        reg [215:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;

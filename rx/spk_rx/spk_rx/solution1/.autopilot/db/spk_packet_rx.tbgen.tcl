@@ -1,15 +1,16 @@
 set C_TypeInfoList {{ 
 "spk_packet_rx" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"pre_in": [[], {"reference": "0"}] }, {"post_in": [[], {"reference": "0"}] }, {"time_stamp": [[], {"reference": "1"}] }, {"spk_out_stream": [[], {"reference": "2"}] }],[],""], 
 "0": [ "stream<spk_struct>", {"hls_type": {"stream": [[[[],"3"]],"4"]}}], 
+"3": [ "spk_struct", {"struct": [[],[],[{ "user": [[], "5"]},{ "last": [[],  {"scalar": "bool"}]},{ "id": [[8], "6"]},{ "data": [[128], "7"]}],""]}], 
+"6": [ "ch_type", {"typedef": [[[],"8"],""]}], 
+"5": [ "ap_uint<5>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 5}}]],""]}}], 
 "1": [ "stream<int>", {"hls_type": {"stream": [[[[], {"scalar": "int"}]],"4"]}}], 
-"2": [ "stream<spk_stream>", {"hls_type": {"stream": [[[[],"5"]],"4"]}}], 
-"5": [ "spk_stream", {"struct": [[],[],[{ "id": [[8], "6"]},{ "user": [[],  {"scalar": "int"}]},{ "data": [[128], "7"]}],""]}], 
-"3": [ "spk_struct", {"struct": [[],[],[{ "user": [[], "8"]},{ "last": [[],  {"scalar": "bool"}]},{ "id": [[8], "6"]},{ "data": [[128], "7"]}],""]}], 
-"8": [ "ap_uint<5>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 5}}]],""]}}], 
-"6": [ "ch_type", {"typedef": [[[],"9"],""]}], 
-"9": [ "ap_uint<6>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 6}}]],""]}}], 
-"7": [ "ap_data", {"typedef": [[[],"10"],""]}], 
-"10": [ "ap_uint<96>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 96}}]],""]}}],
+"2": [ "stream<spk_stream>", {"hls_type": {"stream": [[[[],"9"]],"4"]}}], 
+"9": [ "spk_stream", {"struct": [[],[],[{ "id": [[8], "6"]},{ "user": [[],  {"scalar": "int"}]},{ "data": [[128], "7"]},{ "dest": [[], "10"]}],""]}], 
+"10": [ "ap_uint<16>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 16}}]],""]}}], 
+"8": [ "ap_uint<6>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 6}}]],""]}}], 
+"7": [ "ap_data", {"typedef": [[[],"11"],""]}], 
+"11": [ "ap_uint<96>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 96}}]],""]}}],
 "4": ["hls", ""]
 }}
 set moduleName spk_packet_rx
@@ -34,6 +35,7 @@ set C_modelArgList {
 	{ spk_out_stream_V_id_V int 6 regular {axi_s 1 volatile  { spk_out_stream id } }  }
 	{ spk_out_stream_V_user int 32 regular {axi_s 1 volatile  { spk_out_stream user } }  }
 	{ spk_out_stream_V_data_V int 96 regular {axi_s 1 volatile  { spk_out_stream data } }  }
+	{ spk_out_stream_V_dest_V int 16 regular {axi_s 1 volatile  { spk_out_stream dest } }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "pre_in_V_user_V", "interface" : "axis", "bitwidth" : 5, "direction" : "READONLY", "bitSlice":[{"low":0,"up":4,"cElement": [{"cName": "pre_in.V.user.V","cData": "uint5","bit_use": { "low": 0,"up": 4},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
@@ -47,9 +49,10 @@ set C_modelArgMapList {[
  	{ "Name" : "time_stamp_V", "interface" : "axis", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "time_stamp.V","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "spk_out_stream_V_id_V", "interface" : "axis", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "spk_out_stream.V.id.V","cData": "uint6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "spk_out_stream_V_user", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "spk_out_stream.V.user","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "spk_out_stream_V_data_V", "interface" : "axis", "bitwidth" : 96, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":95,"cElement": [{"cName": "spk_out_stream.V.data.V","cData": "uint96","bit_use": { "low": 0,"up": 95},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
+ 	{ "Name" : "spk_out_stream_V_data_V", "interface" : "axis", "bitwidth" : 96, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":95,"cElement": [{"cName": "spk_out_stream.V.data.V","cData": "uint96","bit_use": { "low": 0,"up": 95},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "spk_out_stream_V_dest_V", "interface" : "axis", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "spk_out_stream.V.dest.V","cData": "uint16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 26
+set portNum 27
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
@@ -73,10 +76,11 @@ set portList {
 	{ time_stamp_V_TVALID sc_in sc_logic 1 invld 8 } 
 	{ time_stamp_V_TREADY sc_out sc_logic 1 inacc 8 } 
 	{ spk_out_stream_TID sc_out sc_lv 6 signal 9 } 
-	{ spk_out_stream_TVALID sc_out sc_logic 1 outvld 11 } 
-	{ spk_out_stream_TREADY sc_in sc_logic 1 outacc 11 } 
+	{ spk_out_stream_TVALID sc_out sc_logic 1 outvld 12 } 
+	{ spk_out_stream_TREADY sc_in sc_logic 1 outacc 12 } 
 	{ spk_out_stream_TUSER sc_out sc_lv 32 signal 10 } 
 	{ spk_out_stream_TDATA sc_out sc_lv 96 signal 11 } 
+	{ spk_out_stream_TDEST sc_out sc_lv 16 signal 12 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -101,10 +105,11 @@ set NewPortList {[
  	{ "name": "time_stamp_V_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "time_stamp_V", "role": "TVALID" }} , 
  	{ "name": "time_stamp_V_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "time_stamp_V", "role": "TREADY" }} , 
  	{ "name": "spk_out_stream_TID", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "spk_out_stream_V_id_V", "role": "default" }} , 
- 	{ "name": "spk_out_stream_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "spk_out_stream_V_data_V", "role": "default" }} , 
- 	{ "name": "spk_out_stream_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "spk_out_stream_V_data_V", "role": "default" }} , 
+ 	{ "name": "spk_out_stream_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "spk_out_stream_V_dest_V", "role": "default" }} , 
+ 	{ "name": "spk_out_stream_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "spk_out_stream_V_dest_V", "role": "default" }} , 
  	{ "name": "spk_out_stream_TUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "spk_out_stream_V_user", "role": "default" }} , 
- 	{ "name": "spk_out_stream_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":96, "type": "signal", "bundle":{"name": "spk_out_stream_V_data_V", "role": "default" }}  ]}
+ 	{ "name": "spk_out_stream_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":96, "type": "signal", "bundle":{"name": "spk_out_stream_V_data_V", "role": "default" }} , 
+ 	{ "name": "spk_out_stream_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "spk_out_stream_V_dest_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"], "CDFG" : "spk_packet_rx", "VariableLatency" : "1", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "ProcessNetwork" : "0", "Combinational" : "0", "ControlExist" : "1",
@@ -125,6 +130,7 @@ set RtlHierarchyInfo {[
 		{"Name" : "spk_out_stream_V_user", "Type" : "Axis", "Direction" : "O", "BlockSignal" : [], "SubConnect" : []}, 
 		{"Name" : "spk_out_stream_V_data_V", "Type" : "Axis", "Direction" : "O", "BlockSignal" : [
 			{"Name" : "spk_out_stream_TDATA_blk_n", "Type" : "RtlSignal"}], "SubConnect" : []}, 
+		{"Name" : "spk_out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O", "BlockSignal" : [], "SubConnect" : []}, 
 		{"Name" : "spk_V", "Type" : "Memory", "Direction" : "IO", "BlockSignal" : [], "SubConnect" : []}],
 		"WaitState" : [],
 		"SubBlockPort" : []},
@@ -149,7 +155,8 @@ set Spec2ImplPortList {
 	time_stamp_V { axis {  { time_stamp_V_TDATA in_data 0 32 }  { time_stamp_V_TVALID in_vld 0 1 }  { time_stamp_V_TREADY in_acc 1 1 } } }
 	spk_out_stream_V_id_V { axis {  { spk_out_stream_TID out_data 1 6 } } }
 	spk_out_stream_V_user { axis {  { spk_out_stream_TUSER out_data 1 32 } } }
-	spk_out_stream_V_data_V { axis {  { spk_out_stream_TVALID out_vld 1 1 }  { spk_out_stream_TREADY out_acc 0 1 }  { spk_out_stream_TDATA out_data 1 96 } } }
+	spk_out_stream_V_data_V { axis {  { spk_out_stream_TDATA out_data 1 96 } } }
+	spk_out_stream_V_dest_V { axis {  { spk_out_stream_TVALID out_vld 1 1 }  { spk_out_stream_TREADY out_acc 0 1 }  { spk_out_stream_TDEST out_data 1 16 } } }
 }
 
 set busDeadlockParameterList { 

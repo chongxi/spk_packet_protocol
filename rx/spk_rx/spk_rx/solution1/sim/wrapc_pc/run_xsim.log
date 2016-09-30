@@ -1,41 +1,41 @@
-70	29	0
-70	29	1
-70	29	2
-70	29	3
-70	29	4
-70	29	5
-70	29	6
-70	29	7
-70	29	8
-70	29	9
-70	29	10
-70	29	11
-70	29	12
-70	29	13
-70	29	14
-70	29	15
-70	29	16
-70	29	17
-70	29	18
-78	16	0
-78	16	1
-78	16	2
-78	16	3
-78	16	4
-78	16	5
-78	16	6
-78	16	7
-78	16	8
-78	16	9
-78	16	10
-78	16	11
-78	16	12
-78	16	13
-78	16	14
-78	16	15
-78	16	16
-78	16	17
-78	16	18
+551	70	29	0
+552	70	29	1
+553	70	29	2
+554	70	29	3
+555	70	29	4
+556	70	29	5
+557	70	29	6
+558	70	29	7
+559	70	29	8
+560	70	29	9
+561	70	29	10
+562	70	29	11
+563	70	29	12
+564	70	29	13
+565	70	29	14
+566	70	29	15
+567	70	29	16
+568	70	29	17
+569	70	29	18
+304	78	16	0
+305	78	16	1
+306	78	16	2
+307	78	16	3
+308	78	16	4
+309	78	16	5
+310	78	16	6
+311	78	16	7
+312	78	16	8
+313	78	16	9
+314	78	16	10
+315	78	16	11
+316	78	16	12
+317	78	16	13
+318	78	16	14
+319	78	16	15
+320	78	16	16
+321	78	16	17
+322	78	16	18
 Vivado Simulator 2016.1
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: /opt/Xilinx/Vivado/2016.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_spk_packet_rx_top -prj spk_packet_rx.prj --lib ieee_proposed=./ieee_proposed -s spk_packet_rx -debug wave 
@@ -49,9 +49,9 @@ INFO: [VRFC 10-311] analyzing module spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_D
 INFO: [VRFC 10-311] analyzing module spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_spk_packet_rx_top
-INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:143]
-INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:144]
-INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:173]
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:150]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:151]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:181]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/AESL_axi_s_spk_out_stream.v" into library xil_defaultlib
@@ -74,7 +74,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.spk_packet_rx_spk_V_ram
-Compiling module xil_defaultlib.spk_packet_rx_spk_V(DataWidth=32...
+Compiling module xil_defaultlib.spk_packet_rx_spk_V(DataWidth=96...
 Compiling module xil_defaultlib.spk_packet_rx_mul_6ns_6ns_11_3_M...
 Compiling module xil_defaultlib.spk_packet_rx_mul_6ns_6ns_11_3(I...
 Compiling module xil_defaultlib.spk_packet_rx_mac_muladd_6ns_6ns...
@@ -83,12 +83,15 @@ Compiling module xil_defaultlib.spk_packet_rx
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=5)
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=1)
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=6)
-Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=96)
 Compiling module xil_defaultlib.AESL_axi_s_pre_in
 Compiling module xil_defaultlib.AESL_axi_s_post_in
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
 Compiling module xil_defaultlib.AESL_axi_s_time_stamp_V
 Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=6)
 Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=96)
+Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=16)
 Compiling module xil_defaultlib.AESL_axi_s_spk_out_stream
 Compiling module xil_defaultlib.apatb_spk_packet_rx_top
 Built simulation snapshot spk_packet_rx
@@ -99,7 +102,7 @@ Built simulation snapshot spk_packet_rx
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 source /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/xsim.dir/spk_packet_rx/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Sep 24 16:24:32 2016...
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 29 16:19:45 2016...
 
 ****** xsim v2016.1 (64-bit)
   **** SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
@@ -115,6 +118,7 @@ source spk_packet_rx.tcl
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 ## set spk_out_stream_group [add_wave_group spk_out_stream(axis) -into $coutputgroup]
+## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDEST -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDATA -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TUSER -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TREADY -into $spk_out_stream_group -color #ffff00 -radix hex
@@ -157,44 +161,44 @@ source spk_packet_rx.tcl
 // RTL Simulation : 0 / 38 [0.00%] @ "110000"
 // RTL Simulation : 38 / 38 [0.00%] @ "1578000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1594 ns : File "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" Line 423
+$finish called at time : 1594 ns : File "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" Line 433
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Sep 24 16:24:34 2016...
-70	29	0
-70	29	1
-70	29	2
-70	29	3
-70	29	4
-70	29	5
-70	29	6
-70	29	7
-70	29	8
-70	29	9
-70	29	10
-70	29	11
-70	29	12
-70	29	13
-70	29	14
-70	29	15
-70	29	16
-70	29	17
-70	29	18
-78	16	0
-78	16	1
-78	16	2
-78	16	3
-78	16	4
-78	16	5
-78	16	6
-78	16	7
-78	16	8
-78	16	9
-78	16	10
-78	16	11
-78	16	12
-78	16	13
-78	16	14
-78	16	15
-78	16	16
-78	16	17
-78	16	18
+INFO: [Common 17-206] Exiting xsim at Thu Sep 29 16:19:47 2016...
+551	70	29	0
+552	70	29	1
+553	70	29	2
+554	70	29	3
+555	70	29	4
+556	70	29	5
+557	70	29	6
+558	70	29	7
+559	70	29	8
+560	70	29	9
+561	70	29	10
+562	70	29	11
+563	70	29	12
+564	70	29	13
+565	70	29	14
+566	70	29	15
+567	70	29	16
+568	70	29	17
+569	70	29	18
+304	78	16	0
+305	78	16	1
+306	78	16	2
+307	78	16	3
+308	78	16	4
+309	78	16	5
+310	78	16	6
+311	78	16	7
+312	78	16	8
+313	78	16	9
+314	78	16	10
+315	78	16	11
+316	78	16	12
+317	78	16	13
+318	78	16	14
+319	78	16	15
+320	78	16	16
+321	78	16	17
+322	78	16	18

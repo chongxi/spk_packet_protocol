@@ -14,6 +14,8 @@
 `define EGRESS_STATUS_spk_out_stream_TUSER "../tv/stream_size/stream_egress_status_spk_out_stream_V_user.dat"
 `define TV_OUT_spk_out_stream_TDATA "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
 `define EGRESS_STATUS_spk_out_stream_TDATA "../tv/stream_size/stream_egress_status_spk_out_stream_V_data_V.dat"
+`define TV_OUT_spk_out_stream_TDEST "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
+`define EGRESS_STATUS_spk_out_stream_TDEST "../tv/stream_size/stream_egress_status_spk_out_stream_V_dest_V.dat"
 
 `define AUTOTB_TRANSACTION_NUM 38
 
@@ -22,7 +24,8 @@ module AESL_axi_s_spk_out_stream (
     input reset,
     input [6 - 1:0] TRAN_spk_out_stream_TID,
     input [32 - 1:0] TRAN_spk_out_stream_TUSER,
-    input [32 - 1:0] TRAN_spk_out_stream_TDATA,
+    input [96 - 1:0] TRAN_spk_out_stream_TDATA,
+    input [16 - 1:0] TRAN_spk_out_stream_TDEST,
     input TRAN_spk_out_stream_TVALID,
     output TRAN_spk_out_stream_TREADY,
     input ready,
@@ -80,11 +83,11 @@ module AESL_axi_s_spk_out_stream (
     wire spk_out_stream_TDATA_full;
     wire spk_out_stream_TDATA_empty;
     reg spk_out_stream_TDATA_write_en;
-    reg [32 - 1:0] spk_out_stream_TDATA_write_data;
+    reg [96 - 1:0] spk_out_stream_TDATA_write_data;
     reg spk_out_stream_TDATA_read_en;
-    wire [32 - 1:0] spk_out_stream_TDATA_read_data;
+    wire [96 - 1:0] spk_out_stream_TDATA_read_data;
     
-    fifo #(19, 32) fifo_spk_out_stream_TDATA (
+    fifo #(19, 96) fifo_spk_out_stream_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(spk_out_stream_TDATA_write_en),
@@ -101,7 +104,31 @@ module AESL_axi_s_spk_out_stream (
         spk_out_stream_TDATA_read_en <= 0;
     end
     
-    assign TRAN_spk_out_stream_TREADY = ~(spk_out_stream_TID_full || spk_out_stream_TUSER_full || spk_out_stream_TDATA_full);
+    wire spk_out_stream_TDEST_full;
+    wire spk_out_stream_TDEST_empty;
+    reg spk_out_stream_TDEST_write_en;
+    reg [16 - 1:0] spk_out_stream_TDEST_write_data;
+    reg spk_out_stream_TDEST_read_en;
+    wire [16 - 1:0] spk_out_stream_TDEST_read_data;
+    
+    fifo #(19, 16) fifo_spk_out_stream_TDEST (
+        .reset(1'b0),
+        .write_clock(clk),
+        .write_en(spk_out_stream_TDEST_write_en),
+        .write_data(spk_out_stream_TDEST_write_data),
+        .read_clock(clk),
+        .read_en(spk_out_stream_TDEST_read_en),
+        .read_data(spk_out_stream_TDEST_read_data),
+        .full(spk_out_stream_TDEST_full),
+        .empty(spk_out_stream_TDEST_empty));
+    
+    always @ (*) begin
+        spk_out_stream_TDEST_write_en <= TRAN_spk_out_stream_TVALID;
+        spk_out_stream_TDEST_write_data <= TRAN_spk_out_stream_TDEST;
+        spk_out_stream_TDEST_read_en <= 0;
+    end
+    
+    assign TRAN_spk_out_stream_TREADY = ~(spk_out_stream_TID_full || spk_out_stream_TUSER_full || spk_out_stream_TDATA_full || spk_out_stream_TDEST_full);
     
     function is_blank_char(input [7:0] char);
         if (char == " " || char == "\011" || char == "\012" || char == "\015") begin
@@ -111,7 +138,7 @@ module AESL_axi_s_spk_out_stream (
         end
     endfunction
     
-    function [191:0] read_token(input integer fp);
+    function [215:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -120,8 +147,8 @@ module AESL_axi_s_spk_out_stream (
         end
     endfunction
     
-    function [191:0] rm_0x(input [191:0] token);
-        reg [191:0] token_tmp;
+    function [215:0] rm_0x(input [215:0] token);
+        reg [215:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -211,7 +238,7 @@ module AESL_axi_s_spk_out_stream (
     
     initial begin : AXI_stream_receiver_spk_out_stream_TDATA
         integer fp;
-        reg [32 - 1:0] data;
+        reg [96 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_spk_out_stream_TDATA = 0;
@@ -233,6 +260,37 @@ module AESL_axi_s_spk_out_stream (
                 $fdisplay(fp, "[[/transaction]]");
                 transaction_save_spk_out_stream_TDATA = transaction_save_spk_out_stream_TDATA + 1;
                 fifo_spk_out_stream_TDATA.clear();
+                $fclose(fp);
+            end
+        end
+    end
+    
+    reg [31:0] transaction_save_spk_out_stream_TDEST;
+    
+    initial begin : AXI_stream_receiver_spk_out_stream_TDEST
+        integer fp;
+        reg [16 - 1:0] data;
+        reg [8 * 5:1] str;
+        
+        transaction_save_spk_out_stream_TDEST = 0;
+        fifo_spk_out_stream_TDEST.clear();
+        wait (reset === 1);
+        forever begin
+            @ (negedge clk);
+            if (done_1 == 1) begin
+                fp = $fopen(`TV_OUT_spk_out_stream_TDEST, "a");
+                if (fp == 0) begin // Failed to open file
+                    $display("ERROR: Failed to open file \"%s\"!", `TV_OUT_spk_out_stream_TDEST);
+                    $finish;
+                end
+                $fdisplay(fp, "[[transaction]] %d", transaction_save_spk_out_stream_TDEST);
+                while (~fifo_spk_out_stream_TDEST.empty) begin
+                    fifo_spk_out_stream_TDEST.pop(data);
+                    $fdisplay(fp, "0x%x", data);
+                end
+                $fdisplay(fp, "[[/transaction]]");
+                transaction_save_spk_out_stream_TDEST = transaction_save_spk_out_stream_TDEST + 1;
+                fifo_spk_out_stream_TDEST.clear();
                 $fclose(fp);
             end
         end

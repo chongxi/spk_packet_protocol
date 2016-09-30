@@ -39511,7 +39511,7 @@ class stream
 
 
 
-typedef ap_fixed<32, 18> ap_data;
+typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 
 struct spk_struct{
@@ -39526,6 +39526,7 @@ struct spk_stream{
  ch_type id;
  int user;
  ap_data data;
+ ap_uint<16> dest;
 };
 
 enum rxState {IDLE=0, PRE, POST};
@@ -39571,6 +39572,7 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 #pragma HLS PIPELINE rewind
     out.id = ch;
     out.user = frameNo;
+    out.dest = j+19*ch;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }
@@ -39579,4 +39581,4 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 }
 #undef spk_packet_rx
 
-#39 "/vivado_proj/spk_packet_protocol/rx/spk_packet_rx.cpp"
+#40 "/vivado_proj/spk_packet_protocol/rx/spk_packet_rx.cpp"

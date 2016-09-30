@@ -39511,7 +39511,7 @@ class stream
 
 
 
-typedef ap_fixed<32, 18> ap_data;
+typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 
 struct spk_struct{
@@ -39526,6 +39526,7 @@ struct spk_stream{
  ch_type id;
  int user;
  ap_data data;
+ ap_uint<16> dest;
 };
 
 enum rxState {IDLE=0, PRE, POST};
@@ -39614,18 +39615,19 @@ int main()
 
 
 
- int ch, frameNo;
+ int ch, frameNo, n;
  ap_data data;
  spk_stream result;
  while(!spk_out_stream.empty()){
   result = spk_out_stream.read();
   ch = result.id;
   frameNo = result.user;
+  n = result.dest;
   data = result.data;
-  cout << frameNo << '\t' << ch << '\t' << data << endl;
+  cout << n << '\t' << frameNo << '\t' << ch << '\t' << data << endl;
  }
 
  return 0;
 }
 #endif
-#92 "/vivado_proj/spk_packet_protocol/rx/spk_packet_rx_test.cpp"
+#93 "/vivado_proj/spk_packet_protocol/rx/spk_packet_rx_test.cpp"

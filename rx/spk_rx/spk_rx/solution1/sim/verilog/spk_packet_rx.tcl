@@ -3,6 +3,7 @@ log_wave [get_objects -filter {type == in_port || type == out_port || type == in
 set designtopgroup [add_wave_group "Design Top Signals"]
 set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 set spk_out_stream_group [add_wave_group spk_out_stream(axis) -into $coutputgroup]
+add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDEST -into $spk_out_stream_group -radix hex
 add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDATA -into $spk_out_stream_group -radix hex
 add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TUSER -into $spk_out_stream_group -radix hex
 add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TREADY -into $spk_out_stream_group -color #ffff00 -radix hex

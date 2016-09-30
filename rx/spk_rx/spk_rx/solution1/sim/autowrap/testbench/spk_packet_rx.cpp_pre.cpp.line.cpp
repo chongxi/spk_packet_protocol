@@ -39504,7 +39504,7 @@ class stream
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-typedef ap_fixed<32, 18> ap_data;
+typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 #pragma empty_line
 struct spk_struct{
@@ -39519,6 +39519,7 @@ struct spk_stream{
  ch_type id;
  int user;
  ap_data data;
+ ap_uint<16> dest;
 };
 #pragma empty_line
 enum rxState {IDLE=0, PRE, POST};
@@ -39558,6 +39559,7 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 #pragma HLS PIPELINE rewind
     out.id = ch;
     out.user = frameNo;
+    out.dest = j+19*ch;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }

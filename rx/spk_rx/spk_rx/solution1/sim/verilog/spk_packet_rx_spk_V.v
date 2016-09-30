@@ -8,7 +8,7 @@
 `timescale 1 ns / 1 ps
 module spk_packet_rx_spk_V_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 96;
 parameter AWIDTH = 10;
 parameter MEM_SIZE = 608;
 
@@ -55,7 +55,7 @@ module spk_packet_rx_spk_V(
     d0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd96;
 parameter AddressRange = 32'd608;
 parameter AddressWidth = 32'd10;
 input reset;

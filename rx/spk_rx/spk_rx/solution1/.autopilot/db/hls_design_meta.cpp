@@ -22,9 +22,10 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("time_stamp_V_TVALID", 1, hls_in, 8, "axis", "in_vld", 1),
 	Port_Property("time_stamp_V_TREADY", 1, hls_out, 8, "axis", "in_acc", 1),
 	Port_Property("spk_out_stream_TID", 6, hls_out, 9, "axis", "out_data", 1),
-	Port_Property("spk_out_stream_TVALID", 1, hls_out, 11, "axis", "out_vld", 1),
-	Port_Property("spk_out_stream_TREADY", 1, hls_in, 11, "axis", "out_acc", 1),
+	Port_Property("spk_out_stream_TVALID", 1, hls_out, 12, "axis", "out_vld", 1),
+	Port_Property("spk_out_stream_TREADY", 1, hls_in, 12, "axis", "out_acc", 1),
 	Port_Property("spk_out_stream_TUSER", 32, hls_out, 10, "axis", "out_data", 1),
 	Port_Property("spk_out_stream_TDATA", 96, hls_out, 11, "axis", "out_data", 1),
+	Port_Property("spk_out_stream_TDEST", 16, hls_out, 12, "axis", "out_data", 1),
 };
 const char* HLS_Design_Meta::dut_name = "spk_packet_rx";

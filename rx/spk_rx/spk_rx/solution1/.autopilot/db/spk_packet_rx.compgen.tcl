@@ -456,10 +456,29 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {spk_out_stream} \
     metadata {  } \
     op interface \
-    ports { spk_out_stream_TVALID { O 1 bit } spk_out_stream_TREADY { I 1 bit } spk_out_stream_TDATA { O 96 vector } } \
+    ports { spk_out_stream_TDATA { O 96 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'spk_out_stream_V_data_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 16 \
+    name spk_out_stream_V_dest_V \
+    reset_level 0 \
+    sync_rst true \
+    corename {spk_out_stream} \
+    metadata {  } \
+    op interface \
+    ports { spk_out_stream_TVALID { O 1 bit } spk_out_stream_TREADY { I 1 bit } spk_out_stream_TDEST { O 16 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'spk_out_stream_V_dest_V'"
 }
 }
 

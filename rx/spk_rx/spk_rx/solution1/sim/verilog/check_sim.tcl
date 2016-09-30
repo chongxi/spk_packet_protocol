@@ -95,9 +95,11 @@ proc check_tvin_file {} {
          "c.spk_packet_rx.autotvin_spk_out_stream_V_id_V.dat"
          "c.spk_packet_rx.autotvin_spk_out_stream_V_user.dat"
          "c.spk_packet_rx.autotvin_spk_out_stream_V_data_V.dat"
+         "c.spk_packet_rx.autotvin_spk_out_stream_V_dest_V.dat"
          "c.spk_packet_rx.autotvout_spk_out_stream_V_id_V.dat"
          "c.spk_packet_rx.autotvout_spk_out_stream_V_user.dat"
          "c.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
+         "c.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -125,6 +127,7 @@ proc check_tvout_file {} {
          "rtl.spk_packet_rx.autotvout_spk_out_stream_V_id_V.dat"
          "rtl.spk_packet_rx.autotvout_spk_out_stream_V_user.dat"
          "rtl.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
+         "rtl.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

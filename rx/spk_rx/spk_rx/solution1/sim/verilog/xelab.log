@@ -10,9 +10,9 @@ INFO: [VRFC 10-311] analyzing module spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_D
 INFO: [VRFC 10-311] analyzing module spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_spk_packet_rx_top
-INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:143]
-INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:144]
-INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:173]
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:150]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:151]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v:181]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing Verilog file "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/AESL_axi_s_spk_out_stream.v" into library xil_defaultlib
@@ -35,7 +35,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.spk_packet_rx_spk_V_ram
-Compiling module xil_defaultlib.spk_packet_rx_spk_V(DataWidth=32...
+Compiling module xil_defaultlib.spk_packet_rx_spk_V(DataWidth=96...
 Compiling module xil_defaultlib.spk_packet_rx_mul_6ns_6ns_11_3_M...
 Compiling module xil_defaultlib.spk_packet_rx_mul_6ns_6ns_11_3(I...
 Compiling module xil_defaultlib.spk_packet_rx_mac_muladd_6ns_6ns...
@@ -44,12 +44,15 @@ Compiling module xil_defaultlib.spk_packet_rx
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=5)
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=1)
 Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=6)
-Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=96)
 Compiling module xil_defaultlib.AESL_axi_s_pre_in
 Compiling module xil_defaultlib.AESL_axi_s_post_in
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
 Compiling module xil_defaultlib.AESL_axi_s_time_stamp_V
 Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=6)
 Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=96)
+Compiling module xil_defaultlib.fifo(DEPTH=19,WIDTH=16)
 Compiling module xil_defaultlib.AESL_axi_s_spk_out_stream
 Compiling module xil_defaultlib.apatb_spk_packet_rx_top
 Built simulation snapshot spk_packet_rx

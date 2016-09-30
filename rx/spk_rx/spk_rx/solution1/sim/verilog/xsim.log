@@ -2,8 +2,8 @@
 # xsim v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Sat Sep 24 16:24:32 2016
-# Process ID: 4529
+# Start of session at: Thu Sep 29 16:19:45 2016
+# Process ID: 46842
 # Current directory: /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/spk_packet_rx/xsim_script.tcl}
 # Log file: /vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/xsim.log
@@ -18,6 +18,7 @@ source spk_packet_rx.tcl
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 ## set spk_out_stream_group [add_wave_group spk_out_stream(axis) -into $coutputgroup]
+## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDEST -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TDATA -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TUSER -into $spk_out_stream_group -radix hex
 ## add_wave /apatb_spk_packet_rx_top/AESL_inst_spk_packet_rx/spk_out_stream_TREADY -into $spk_out_stream_group -color #ffff00 -radix hex
@@ -60,6 +61,6 @@ source spk_packet_rx.tcl
 // RTL Simulation : 0 / 38 [0.00%] @ "110000"
 // RTL Simulation : 38 / 38 [0.00%] @ "1578000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1594 ns : File "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" Line 423
+$finish called at time : 1594 ns : File "/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/sim/verilog/spk_packet_rx.autotb.v" Line 433
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Sep 24 16:24:34 2016...
+INFO: [Common 17-206] Exiting xsim at Thu Sep 29 16:19:47 2016...

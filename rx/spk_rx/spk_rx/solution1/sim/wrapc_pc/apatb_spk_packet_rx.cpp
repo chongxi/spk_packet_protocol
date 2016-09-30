@@ -32,13 +32,14 @@ using namespace sc_dt;
         ap_uint<5> user;
         bool last;
         ap_uint<6> id;
-        ap_fixed<32, 18, (ap_q_mode) 5, (ap_o_mode)3, 0> data;
+        ap_uint<96> data;
        } spk_struct;
 
           typedef struct spk_stream {
               ap_uint<6> id;
               int user;
-              ap_fixed<32, 18, (ap_q_mode) 5, (ap_o_mode)3, 0> data;
+              ap_uint<96> data;
+              ap_uint<16> dest;
              } spk_stream;
 
 
@@ -97,6 +98,11 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_spk_out_stream_V_data_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_data_V.dat"
 #define WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_data_V  "../tv/stream_size/stream_size_out_spk_out_stream_V_data_V.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_spk_out_stream_V_data_V  "../tv/stream_size/stream_egress_status_spk_out_stream_V_data_V.dat"
+// wrapc file define: "spk_out_stream_V_dest_V"
+#define AUTOTB_TVOUT_spk_out_stream_V_dest_V  "../tv/cdatafile/c.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
+#define AUTOTB_TVIN_spk_out_stream_V_dest_V  "../tv/cdatafile/c.spk_packet_rx.autotvin_spk_out_stream_V_dest_V.dat"
+#define WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_dest_V  "../tv/stream_size/stream_size_out_spk_out_stream_V_dest_V.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_spk_out_stream_V_dest_V  "../tv/stream_size/stream_egress_status_spk_out_stream_V_dest_V.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
@@ -106,6 +112,8 @@ using namespace sc_dt;
 #define AUTOTB_TVOUT_PC_spk_out_stream_V_user  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_user.dat"
 // tvout file define: "spk_out_stream_V_data_V"
 #define AUTOTB_TVOUT_PC_spk_out_stream_V_data_V  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_data_V.dat"
+// tvout file define: "spk_out_stream_V_dest_V"
+#define AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V  "../tv/rtldatafile/rtl.spk_packet_rx.autotvout_spk_out_stream_V_dest_V.dat"
 
 class INTER_TCL_FILE {
 	public:
@@ -123,6 +131,7 @@ class INTER_TCL_FILE {
 			spk_out_stream_V_id_V_depth = 0;
 			spk_out_stream_V_user_depth = 0;
 			spk_out_stream_V_data_V_depth = 0;
+			spk_out_stream_V_dest_V_depth = 0;
 			trans_num =0;
 		}
 
@@ -154,6 +163,7 @@ class INTER_TCL_FILE {
 			total_list << "{spk_out_stream_V_id_V " << spk_out_stream_V_id_V_depth << "}\n";
 			total_list << "{spk_out_stream_V_user " << spk_out_stream_V_user_depth << "}\n";
 			total_list << "{spk_out_stream_V_data_V " << spk_out_stream_V_data_V_depth << "}\n";
+			total_list << "{spk_out_stream_V_dest_V " << spk_out_stream_V_dest_V_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -173,6 +183,7 @@ class INTER_TCL_FILE {
 		int spk_out_stream_V_id_V_depth;
 		int spk_out_stream_V_user_depth;
 		int spk_out_stream_V_data_V_depth;
+		int spk_out_stream_V_dest_V_depth;
 		int trans_num;
 
 	private:
@@ -590,7 +601,7 @@ hls::stream<spk_stream >& spk_out_stream)
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_spk_out_stream_V_data_V, AESL_token); // data
 
-			std::vector<sc_bv<32> > spk_out_stream_V_data_V_pc_buffer;
+			std::vector<sc_bv<96> > spk_out_stream_V_data_V_pc_buffer;
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -676,18 +687,18 @@ hls::stream<spk_stream >& spk_out_stream)
 			{
 				// RTL Name: spk_out_stream_V_data_V
 				{
-					// bitslice(31, 0)
+					// bitslice(95, 0)
 					// {
-						// celement: spk_out_stream.V.data.V(31, 0)
+						// celement: spk_out_stream.V.data.V(95, 0)
 						// {
-							sc_lv<32>* spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<32>[aesl_tmp_10 - aesl_tmp_11];
+							sc_lv<96>* spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<96>[aesl_tmp_10 - aesl_tmp_11];
 						// }
 					// }
 
-					// bitslice(31, 0)
+					// bitslice(95, 0)
 					{
 						int hls_map_index = 0;
-						// celement: spk_out_stream.V.data.V(31, 0)
+						// celement: spk_out_stream.V.data.V(95, 0)
 						{
 							// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
 							for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
@@ -697,17 +708,17 @@ hls::stream<spk_stream >& spk_out_stream)
 								{
 									if (&(aesl_tmp_9[0].data) != NULL) // check the null address if the c port is array or others
 									{
-										spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++].range(31, 0) = sc_bv<32>(spk_out_stream_V_data_V_pc_buffer[hls_map_index].range(31, 0));
+										spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++].range(95, 0) = sc_bv<96>(spk_out_stream_V_data_V_pc_buffer[hls_map_index].range(95, 0));
 									}
 								}
 							}
 						}
 					}
 
-					// bitslice(31, 0)
+					// bitslice(95, 0)
 					{
 						int hls_map_index = 0;
-						// celement: spk_out_stream.V.data.V(31, 0)
+						// celement: spk_out_stream.V.data.V(95, 0)
 						{
 							// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
 							for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
@@ -719,11 +730,166 @@ hls::stream<spk_stream >& spk_out_stream)
 									// ori_name               : aesl_tmp_9[i_0].data
 									// sub_1st_elem           : 0 0
 									// ori_name_1st_elem      : aesl_tmp_9[0].data
-									// output_left_conversion : (aesl_tmp_9[i_0].data).range()
+									// output_left_conversion : aesl_tmp_9[i_0].data
 									// output_type_conversion : (spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++]).to_string(SC_BIN).c_str()
 									if (&(aesl_tmp_9[0].data) != NULL) // check the null address if the c port is array or others
 									{
-										(aesl_tmp_9[i_0].data).range() = (spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++]).to_string(SC_BIN).c_str();
+										aesl_tmp_9[i_0].data = (spk_out_stream_V_data_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++]).to_string(SC_BIN).c_str();
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// output port post check: "spk_out_stream_V_dest_V"
+		aesl_fh.read(AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V, AESL_token); // [[transaction]]
+		if (AESL_token != "[[transaction]]")
+		{
+			exit(1);
+		}
+		aesl_fh.read(AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V, AESL_num); // transaction number
+
+		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
+		{
+			aesl_fh.read(AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V, AESL_token); // data
+
+			std::vector<sc_bv<16> > spk_out_stream_V_dest_V_pc_buffer;
+			int i = 0;
+
+			while (AESL_token != "[[/transaction]]")
+			{
+				bool no_x = false;
+				bool err = false;
+
+				// search and replace 'X' with "0" from the 1st char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('X');
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'spk_out_stream_V_dest_V', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				no_x = false;
+
+				// search and replace 'x' with "0" from the 3rd char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('x', 2);
+
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'spk_out_stream_V_dest_V', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				// push token into output port buffer
+				if (AESL_token != "")
+				{
+					spk_out_stream_V_dest_V_pc_buffer.push_back(AESL_token.c_str());
+					i++;
+				}
+
+				aesl_fh.read(AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V, AESL_token); // data or [[/transaction]]
+
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_spk_out_stream_V_dest_V))
+				{
+					exit(1);
+				}
+			}
+
+			// correct the buffer size the current transaction
+			if (i != aesl_tmp_10)
+			{
+				aesl_tmp_10 = i;
+			}
+
+			if (aesl_tmp_10 > 0 && aesl_tmp_9.size() < aesl_tmp_10)
+			{
+				int aesl_tmp_9_size = aesl_tmp_9.size();
+
+				for (int tmp_aesl_tmp_9 = 0; tmp_aesl_tmp_9 < aesl_tmp_10 - aesl_tmp_9_size; tmp_aesl_tmp_9++)
+				{
+					spk_stream tmp;
+					aesl_tmp_9.push_back(tmp);
+				}
+			}
+
+			// ***********************************
+			if (i > 0)
+			{
+				// RTL Name: spk_out_stream_V_dest_V
+				{
+					// bitslice(15, 0)
+					// {
+						// celement: spk_out_stream.V.dest.V(15, 0)
+						// {
+							sc_lv<16>* spk_out_stream_V_dest_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<16>[aesl_tmp_10 - aesl_tmp_11];
+						// }
+					// }
+
+					// bitslice(15, 0)
+					{
+						int hls_map_index = 0;
+						// celement: spk_out_stream.V.dest.V(15, 0)
+						{
+							// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
+							for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									if (&(aesl_tmp_9[0].dest) != NULL) // check the null address if the c port is array or others
+									{
+										spk_out_stream_V_dest_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++].range(15, 0) = sc_bv<16>(spk_out_stream_V_dest_V_pc_buffer[hls_map_index].range(15, 0));
+									}
+								}
+							}
+						}
+					}
+
+					// bitslice(15, 0)
+					{
+						int hls_map_index = 0;
+						// celement: spk_out_stream.V.dest.V(15, 0)
+						{
+							// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
+							for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									// sub                    : i_0 i_1
+									// ori_name               : aesl_tmp_9[i_0].dest
+									// sub_1st_elem           : 0 0
+									// ori_name_1st_elem      : aesl_tmp_9[0].dest
+									// output_left_conversion : aesl_tmp_9[i_0].dest
+									// output_type_conversion : (spk_out_stream_V_dest_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++]).to_string(SC_BIN).c_str()
+									if (&(aesl_tmp_9[0].dest) != NULL) // check the null address if the c port is array or others
+									{
+										aesl_tmp_9[i_0].dest = (spk_out_stream_V_dest_V_lv0_0_0_1_lv1_0_0_1[hls_map_index++]).to_string(SC_BIN).c_str();
 									}
 								}
 							}
@@ -849,6 +1015,16 @@ hls::stream<spk_stream >& spk_out_stream)
 		aesl_fh.touch(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_data_V);
 		char* wrapc_stream_egress_status_spk_out_stream_V_data_V = new char[50];
 		aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_spk_out_stream_V_data_V);
+
+		// "spk_out_stream_V_dest_V"
+		char* tvin_spk_out_stream_V_dest_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_spk_out_stream_V_dest_V);
+		char* tvout_spk_out_stream_V_dest_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_spk_out_stream_V_dest_V);
+		char* wrapc_stream_size_out_spk_out_stream_V_dest_V = new char[50];
+		aesl_fh.touch(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_dest_V);
+		char* wrapc_stream_egress_status_spk_out_stream_V_dest_V = new char[50];
+		aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_spk_out_stream_V_dest_V);
 
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
@@ -1163,14 +1339,14 @@ hls::stream<spk_stream >& spk_out_stream)
 		aesl_fh.write(AUTOTB_TVIN_pre_in_V_data_V, tvin_pre_in_V_data_V);
 		aesl_fh.write(WRAPC_STREAM_INGRESS_STATUS_pre_in_V_data_V, tvin_pre_in_V_data_V);
 
-		sc_bv<32>* pre_in_V_data_V_tvin_wrapc_buffer = new sc_bv<32>[aesl_tmp_1 - aesl_tmp_2];
+		sc_bv<96>* pre_in_V_data_V_tvin_wrapc_buffer = new sc_bv<96>[aesl_tmp_1 - aesl_tmp_2];
 
 		// RTL Name: pre_in_V_data_V
 		{
-			// bitslice(31, 0)
+			// bitslice(95, 0)
 			{
 				int hls_map_index = 0;
-				// celement: pre_in.V.data.V(31, 0)
+				// celement: pre_in.V.data.V(95, 0)
 				{
 					// carray: (0) => (aesl_tmp_1 - aesl_tmp_2 - 1) @ (1)
 					for (int i_0 = 0; i_0 <= aesl_tmp_1 - aesl_tmp_2 - 1; i_0 += 1)
@@ -1183,12 +1359,12 @@ hls::stream<spk_stream >& spk_out_stream)
 							// sub_1st_elem          : 0 0
 							// ori_name_1st_elem     : aesl_tmp_0[0].data
 							// regulate_c_name       : pre_in_V_data_V
-							// input_type_conversion : (aesl_tmp_0[i_0].data).range().to_string(SC_BIN).c_str()
+							// input_type_conversion : (aesl_tmp_0[i_0].data).to_string(2).c_str()
 							if (&(aesl_tmp_0[0].data) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<32> pre_in_V_data_V_tmp_mem;
-								pre_in_V_data_V_tmp_mem = (aesl_tmp_0[i_0].data).range().to_string(SC_BIN).c_str();
-								pre_in_V_data_V_tvin_wrapc_buffer[hls_map_index++].range(31, 0) = pre_in_V_data_V_tmp_mem.range(31, 0);
+								sc_lv<96> pre_in_V_data_V_tmp_mem;
+								pre_in_V_data_V_tmp_mem = (aesl_tmp_0[i_0].data).to_string(2).c_str();
+								pre_in_V_data_V_tvin_wrapc_buffer[hls_map_index++].range(95, 0) = pre_in_V_data_V_tmp_mem.range(95, 0);
 							}
 						}
 					}
@@ -1455,14 +1631,14 @@ hls::stream<spk_stream >& spk_out_stream)
 		aesl_fh.write(AUTOTB_TVIN_post_in_V_data_V, tvin_post_in_V_data_V);
 		aesl_fh.write(WRAPC_STREAM_INGRESS_STATUS_post_in_V_data_V, tvin_post_in_V_data_V);
 
-		sc_bv<32>* post_in_V_data_V_tvin_wrapc_buffer = new sc_bv<32>[aesl_tmp_4 - aesl_tmp_5];
+		sc_bv<96>* post_in_V_data_V_tvin_wrapc_buffer = new sc_bv<96>[aesl_tmp_4 - aesl_tmp_5];
 
 		// RTL Name: post_in_V_data_V
 		{
-			// bitslice(31, 0)
+			// bitslice(95, 0)
 			{
 				int hls_map_index = 0;
-				// celement: post_in.V.data.V(31, 0)
+				// celement: post_in.V.data.V(95, 0)
 				{
 					// carray: (0) => (aesl_tmp_4 - aesl_tmp_5 - 1) @ (1)
 					for (int i_0 = 0; i_0 <= aesl_tmp_4 - aesl_tmp_5 - 1; i_0 += 1)
@@ -1475,12 +1651,12 @@ hls::stream<spk_stream >& spk_out_stream)
 							// sub_1st_elem          : 0 0
 							// ori_name_1st_elem     : aesl_tmp_3[0].data
 							// regulate_c_name       : post_in_V_data_V
-							// input_type_conversion : (aesl_tmp_3[i_0].data).range().to_string(SC_BIN).c_str()
+							// input_type_conversion : (aesl_tmp_3[i_0].data).to_string(2).c_str()
 							if (&(aesl_tmp_3[0].data) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<32> post_in_V_data_V_tmp_mem;
-								post_in_V_data_V_tmp_mem = (aesl_tmp_3[i_0].data).range().to_string(SC_BIN).c_str();
-								post_in_V_data_V_tvin_wrapc_buffer[hls_map_index++].range(31, 0) = post_in_V_data_V_tmp_mem.range(31, 0);
+								sc_lv<96> post_in_V_data_V_tmp_mem;
+								post_in_V_data_V_tmp_mem = (aesl_tmp_3[i_0].data).to_string(2).c_str();
+								post_in_V_data_V_tvin_wrapc_buffer[hls_map_index++].range(95, 0) = post_in_V_data_V_tmp_mem.range(95, 0);
 							}
 						}
 					}
@@ -1714,14 +1890,14 @@ hls::stream<spk_stream >& spk_out_stream)
 		sprintf(tvout_spk_out_stream_V_data_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_spk_out_stream_V_data_V, tvout_spk_out_stream_V_data_V);
 
-		sc_bv<32>* spk_out_stream_V_data_V_tvout_wrapc_buffer = new sc_bv<32>[aesl_tmp_10 - aesl_tmp_11];
+		sc_bv<96>* spk_out_stream_V_data_V_tvout_wrapc_buffer = new sc_bv<96>[aesl_tmp_10 - aesl_tmp_11];
 
 		// RTL Name: spk_out_stream_V_data_V
 		{
-			// bitslice(31, 0)
+			// bitslice(95, 0)
 			{
 				int hls_map_index = 0;
-				// celement: spk_out_stream.V.data.V(31, 0)
+				// celement: spk_out_stream.V.data.V(95, 0)
 				{
 					// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
 					for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
@@ -1734,12 +1910,12 @@ hls::stream<spk_stream >& spk_out_stream)
 							// sub_1st_elem          : 0 0
 							// ori_name_1st_elem     : aesl_tmp_9[0].data
 							// regulate_c_name       : spk_out_stream_V_data_V
-							// input_type_conversion : (aesl_tmp_9[i_0].data).range().to_string(SC_BIN).c_str()
+							// input_type_conversion : (aesl_tmp_9[i_0].data).to_string(2).c_str()
 							if (&(aesl_tmp_9[0].data) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<32> spk_out_stream_V_data_V_tmp_mem;
-								spk_out_stream_V_data_V_tmp_mem = (aesl_tmp_9[i_0].data).range().to_string(SC_BIN).c_str();
-								spk_out_stream_V_data_V_tvout_wrapc_buffer[hls_map_index++].range(31, 0) = spk_out_stream_V_data_V_tmp_mem.range(31, 0);
+								sc_lv<96> spk_out_stream_V_data_V_tmp_mem;
+								spk_out_stream_V_data_V_tmp_mem = (aesl_tmp_9[i_0].data).to_string(2).c_str();
+								spk_out_stream_V_data_V_tvout_wrapc_buffer[hls_map_index++].range(95, 0) = spk_out_stream_V_data_V_tmp_mem.range(95, 0);
 							}
 						}
 					}
@@ -1768,6 +1944,65 @@ hls::stream<spk_stream >& spk_out_stream)
 		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_data_V, wrapc_stream_size_out_spk_out_stream_V_data_V);
 		sprintf(wrapc_stream_size_out_spk_out_stream_V_data_V, "[[/transaction]] \n");
 		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_data_V, wrapc_stream_size_out_spk_out_stream_V_data_V);
+
+		// [[transaction]]
+		sprintf(tvout_spk_out_stream_V_dest_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_spk_out_stream_V_dest_V, tvout_spk_out_stream_V_dest_V);
+
+		sc_bv<16>* spk_out_stream_V_dest_V_tvout_wrapc_buffer = new sc_bv<16>[aesl_tmp_10 - aesl_tmp_11];
+
+		// RTL Name: spk_out_stream_V_dest_V
+		{
+			// bitslice(15, 0)
+			{
+				int hls_map_index = 0;
+				// celement: spk_out_stream.V.dest.V(15, 0)
+				{
+					// carray: (aesl_tmp_11) => (aesl_tmp_10 - 1) @ (1)
+					for (int i_0 = aesl_tmp_11; i_0 <= aesl_tmp_10 - 1; i_0 += 1)
+					{
+						// carray: (0) => (0) @ (1)
+						for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+						{
+							// sub                   : i_0 i_1
+							// ori_name              : aesl_tmp_9[i_0].dest
+							// sub_1st_elem          : 0 0
+							// ori_name_1st_elem     : aesl_tmp_9[0].dest
+							// regulate_c_name       : spk_out_stream_V_dest_V
+							// input_type_conversion : (aesl_tmp_9[i_0].dest).to_string(2).c_str()
+							if (&(aesl_tmp_9[0].dest) != NULL) // check the null address if the c port is array or others
+							{
+								sc_lv<16> spk_out_stream_V_dest_V_tmp_mem;
+								spk_out_stream_V_dest_V_tmp_mem = (aesl_tmp_9[i_0].dest).to_string(2).c_str();
+								spk_out_stream_V_dest_V_tvout_wrapc_buffer[hls_map_index++].range(15, 0) = spk_out_stream_V_dest_V_tmp_mem.range(15, 0);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < aesl_tmp_10 - aesl_tmp_11; i++)
+		{
+			sprintf(tvout_spk_out_stream_V_dest_V, "%s\n", (spk_out_stream_V_dest_V_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_spk_out_stream_V_dest_V, tvout_spk_out_stream_V_dest_V);
+		}
+
+		tcl_file.set_num(aesl_tmp_10 - aesl_tmp_11, &tcl_file.spk_out_stream_V_dest_V_depth);
+		sprintf(tvout_spk_out_stream_V_dest_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_spk_out_stream_V_dest_V, tvout_spk_out_stream_V_dest_V);
+
+		// release memory allocation
+		delete [] spk_out_stream_V_dest_V_tvout_wrapc_buffer;
+
+		// dump stream size
+		sprintf(wrapc_stream_size_out_spk_out_stream_V_dest_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_dest_V, wrapc_stream_size_out_spk_out_stream_V_dest_V);
+		sprintf(wrapc_stream_size_out_spk_out_stream_V_dest_V, "%d\n", aesl_tmp_10 - aesl_tmp_11);
+		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_dest_V, wrapc_stream_size_out_spk_out_stream_V_dest_V);
+		sprintf(wrapc_stream_size_out_spk_out_stream_V_dest_V, "[[/transaction]] \n");
+		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_spk_out_stream_V_dest_V, wrapc_stream_size_out_spk_out_stream_V_dest_V);
 
 		// push back output stream: "spk_out_stream"
 		for (int i = 0; i < aesl_tmp_10; i++)
@@ -1815,6 +2050,10 @@ hls::stream<spk_stream >& spk_out_stream)
 		delete [] tvout_spk_out_stream_V_data_V;
 		delete [] tvin_spk_out_stream_V_data_V;
 		delete [] wrapc_stream_size_out_spk_out_stream_V_data_V;
+		// release memory allocation: "spk_out_stream_V_dest_V"
+		delete [] tvout_spk_out_stream_V_dest_V;
+		delete [] tvin_spk_out_stream_V_dest_V;
+		delete [] wrapc_stream_size_out_spk_out_stream_V_dest_V;
 
 		AESL_transaction++;
 

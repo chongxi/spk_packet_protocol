@@ -31,6 +31,7 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 			#pragma HLS PIPELINE rewind
 				out.id   = ch;
 				out.user = frameNo;
+				out.dest = j+spklen*ch;
 				out.data = spk[ch][j];
 				spk_out_stream.write(out);
 			}
