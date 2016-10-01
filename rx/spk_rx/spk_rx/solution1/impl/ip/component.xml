@@ -981,7 +981,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/spk_packet_rx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_88225f04</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_8a4d65ce</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1083,8 +1083,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Spk_packet_rx</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1609291626</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-09-29T20:26:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1610011829</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2016-10-01T22:29:54Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.1</xilinx:xilinxVersion>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
-| Date         : Thu Sep 29 16:27:51 2016
+| Date         : Sat Oct  1 18:31:03 2016
 | Host         : laic-ws1 running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_timing -file ./report/spk_packet_rx_timing_synth.rpt
 | Design       : spk_packet_rx
@@ -12,7 +12,7 @@ Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 Timing Report
 
 Slack (MET) :             1.045ns  (required time - arrival time)
-  Source:                 tmp_2_reg_340_reg/CLK
+  Source:                 tmp_2_reg_342_reg/CLK
                             (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
   Destination:            spk_V_U/spk_packet_rx_spk_V_ram_U/ram_reg_0/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
@@ -35,20 +35,20 @@ Slack (MET) :             1.045ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=659, unset)          1.279     1.279    ap_clk
-                         DSP48E1                                      r  tmp_2_reg_340_reg/CLK
+                         net (fo=648, unset)          1.279     1.279    ap_clk
+                         DSP48E1                                      r  tmp_2_reg_342_reg/CLK
   -------------------------------------------------------------------    -------------------
                          DSP48E1 (Prop_dsp48e1_CLK_P[1])
-                                                      0.348     1.627 r  tmp_2_reg_340_reg/P[1]
-                         net (fo=4, unplaced)         0.466     2.092    tmp_2_reg_340_reg_n_104
-                         LUT2 (Prop_lut2_I0_O)        0.043     2.135 r  ram_reg_2_i_49/O
-                         net (fo=1, unplaced)         0.000     2.135    ram_reg_2_i_49_n_0
+                                                      0.348     1.627 r  tmp_2_reg_342_reg/P[1]
+                         net (fo=4, unplaced)         0.466     2.092    tmp_2_reg_342_reg_n_104
+                         LUT2 (Prop_lut2_I0_O)        0.043     2.135 r  ram_reg_2_i_62/O
+                         net (fo=1, unplaced)         0.000     2.135    ram_reg_2_i_62_n_0
                          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.267     2.402 r  ram_reg_2_i_40/CO[3]
-                         net (fo=1, unplaced)         0.007     2.409    ram_reg_2_i_40_n_0
+                                                      0.267     2.402 r  ram_reg_2_i_43/CO[3]
+                         net (fo=1, unplaced)         0.007     2.409    ram_reg_2_i_43_n_0
                          CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.155     2.564 r  ram_reg_2_i_39/O[3]
-                         net (fo=1, unplaced)         0.494     3.058    spk_V_U/spk_packet_rx_spk_V_ram_U/tmp_12_cast_fu_244_p1[7]
+                                                      0.155     2.564 r  ram_reg_2_i_41/O[3]
+                         net (fo=1, unplaced)         0.494     3.058    spk_V_U/spk_packet_rx_spk_V_ram_U/tmp_12_cast_fu_245_p1[7]
                          LUT5 (Prop_lut5_I4_O)        0.120     3.178 r  spk_V_U/spk_packet_rx_spk_V_ram_U/ram_reg_2_i_4/O
                          net (fo=3, unplaced)         0.466     3.644    spk_V_U/spk_packet_rx_spk_V_ram_U/spk_V_address0[7]
                          RAMB36E1                                     r  spk_V_U/spk_packet_rx_spk_V_ram_U/ram_reg_0/ADDRARDADDR[12]
@@ -56,7 +56,7 @@ Slack (MET) :             1.045ns  (required time - arrival time)
 
                          (clock ap_clk rise edge)     4.000     4.000 r  
                                                       0.000     4.000 r  ap_clk (IN)
-                         net (fo=659, unset)          1.141     5.141    spk_V_U/spk_packet_rx_spk_V_ram_U/ap_clk
+                         net (fo=648, unset)          1.141     5.141    spk_V_U/spk_packet_rx_spk_V_ram_U/ap_clk
                          RAMB36E1                                     r  spk_V_U/spk_packet_rx_spk_V_ram_U/ram_reg_0/CLKARDCLK
                          clock pessimism              0.000     5.141    
                          clock uncertainty           -0.035     5.105    

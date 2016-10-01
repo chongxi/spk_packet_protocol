@@ -37,11 +37,6 @@
 			<location>/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/spk_packet_rx.h</name>
-			<type>1</type>
-			<location>/vivado_proj/spk_packet_protocol/rx/spk_packet_rx.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/vivado_proj/spk_packet_protocol/rx/spk_rx/spk_rx/solution1/.tcls</location>

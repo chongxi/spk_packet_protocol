@@ -39434,6 +39434,7 @@ class stream
 typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 
+
 struct spk_struct{
  ap_uint<5> user; // pos
  bool last; // last
@@ -39486,7 +39487,7 @@ void spk_packet_rx(hls::stream<spk_struct> &pre_in, hls::stream<spk_struct> &pos
 #pragma HLS PIPELINE rewind
  out.id = ch;
     out.user = frameNo;
-    out.dest = j+19*ch;
+    out.dest = j;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }

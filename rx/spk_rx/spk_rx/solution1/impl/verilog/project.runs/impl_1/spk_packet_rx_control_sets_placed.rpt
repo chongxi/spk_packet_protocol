@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
-| Date         : Thu Sep 29 16:28:27 2016
+| Date         : Sat Oct  1 18:31:37 2016
 | Host         : laic-ws1 running 64-bit Ubuntu 16.04.1 LTS
 | Command      : report_control_sets -verbose -file spk_packet_rx_control_sets_placed.rpt
 | Design       : spk_packet_rx
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    17 |
-| Unused register locations in slices containing registers |    33 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    28 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | No                     |               7 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              32 |           10 |
-| Yes          | No                    | No                     |             612 |          151 |
+| No           | Yes                   | No                     |              32 |           11 |
+| Yes          | No                    | No                     |             600 |          161 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -49,22 +49,21 @@ Table of Contents
 | Clock Signal |              Enable Signal             |                                                Set/Reset Signal                                               | Slice Load Count | Bel Load Count |
 +--------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+----------------+
 |  ap_clk      | spk_V_U/spk_packet_rx_spk_V_ram_U/E[0] |                                                                                                               |                3 |              5 |
-|  ap_clk      | pre_in_V_user_V_0_data_reg0            |                                                                                                               |                1 |              5 |
-|  ap_clk      | post_in_V_user_V_0_data_reg0           |                                                                                                               |                1 |              5 |
-|  ap_clk      | i_op_assign1_reg_1810                  | i_op_assign1_reg_181                                                                                          |                2 |              5 |
-|  ap_clk      |                                        |                                                                                                               |                4 |              6 |
+|  ap_clk      | val_assign1_reg_1810                   | val_assign1_reg_181                                                                                           |                2 |              5 |
+|  ap_clk      | pre_in_V_user_V_0_data_reg0            |                                                                                                               |                2 |              5 |
+|  ap_clk      | post_in_V_user_V_0_data_reg0           |                                                                                                               |                2 |              5 |
 |  ap_clk      | pre_in_V_id_V_0_data_reg0              |                                                                                                               |                2 |              6 |
-|  ap_clk      | ap_sig_462                             |                                                                                                               |                1 |              6 |
 |  ap_clk      | post_in_V_id_V_0_data_reg0             |                                                                                                               |                1 |              6 |
-|  ap_clk      | p_45_in                                |                                                                                                               |                4 |             12 |
-|  ap_clk      |                                        | spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_U2/spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_DSP48_0_U/ap_rst_n_inv |               10 |             32 |
-|  ap_clk      | time_stamp_V_0_data_reg0               |                                                                                                               |                5 |             32 |
-|  ap_clk      | time_stamp_V_0_ack_out                 |                                                                                                               |                5 |             32 |
-|  ap_clk      | ap_sig_423                             |                                                                                                               |               22 |             96 |
+|  ap_clk      | ap_sig_462                             |                                                                                                               |                1 |              6 |
+|  ap_clk      |                                        |                                                                                                               |                4 |              7 |
+|  ap_clk      |                                        | spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_U2/spk_packet_rx_mac_muladd_6ns_6ns_5ns_11_3_DSP48_0_U/ap_rst_n_inv |               11 |             32 |
+|  ap_clk      | time_stamp_V_0_data_reg0               |                                                                                                               |                7 |             32 |
+|  ap_clk      | time_stamp_V_0_ack_out                 |                                                                                                               |                6 |             32 |
+|  ap_clk      | pre_in_V_data_V_0_data_reg0            |                                                                                                               |               21 |             96 |
 |  ap_clk      | post_in_V_data_V_0_data_reg0           |                                                                                                               |               27 |             96 |
-|  ap_clk      | pre_in_V_data_V_0_data_reg0            |                                                                                                               |               20 |             96 |
-|  ap_clk      | ap_NS_fsm[2]                           |                                                                                                               |               22 |            107 |
-|  ap_clk      | post_in_V_data_V_0_ack_out             |                                                                                                               |               37 |            108 |
+|  ap_clk      | ap_sig_423                             |                                                                                                               |               23 |             96 |
+|  ap_clk      | ap_NS_fsm[2]                           |                                                                                                               |               27 |            107 |
+|  ap_clk      | post_in_V_data_V_0_ack_out             |                                                                                                               |               39 |            108 |
 +--------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+----------------+
 
 

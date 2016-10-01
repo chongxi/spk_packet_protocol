@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'spk_packet_rx'
 ================================================================
-* Date:           Thu Sep 29 16:23:15 2016
+* Date:           Sat Oct  1 18:29:34 2016
 
 * Version:        2016.1 (Build 1538259 on Fri Apr 08 16:12:49 MDT 2016)
 * Project:        spk_rx
@@ -119,43 +119,43 @@ ST_1: tmp [2/2] 0.00ns
 
  <State 2>: 0.71ns
 ST_2: stg_16 [1/1] 0.00ns
-.preheader.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i5* %pre_in_V_user_V), !map !62
+.preheader.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i5* %pre_in_V_user_V), !map !41
 
 ST_2: stg_17 [1/1] 0.00ns
-.preheader.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %pre_in_V_last), !map !66
+.preheader.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %pre_in_V_last), !map !45
 
 ST_2: stg_18 [1/1] 0.00ns
-.preheader.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i6* %pre_in_V_id_V), !map !70
+.preheader.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i6* %pre_in_V_id_V), !map !49
 
 ST_2: stg_19 [1/1] 0.00ns
-.preheader.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i96* %pre_in_V_data_V), !map !74
+.preheader.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i96* %pre_in_V_data_V), !map !53
 
 ST_2: stg_20 [1/1] 0.00ns
-.preheader.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i5* %post_in_V_user_V), !map !78
+.preheader.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i5* %post_in_V_user_V), !map !57
 
 ST_2: stg_21 [1/1] 0.00ns
-.preheader.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %post_in_V_last), !map !82
+.preheader.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %post_in_V_last), !map !61
 
 ST_2: stg_22 [1/1] 0.00ns
-.preheader.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap(i6* %post_in_V_id_V), !map !86
+.preheader.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap(i6* %post_in_V_id_V), !map !65
 
 ST_2: stg_23 [1/1] 0.00ns
-.preheader.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap(i96* %post_in_V_data_V), !map !90
+.preheader.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap(i96* %post_in_V_data_V), !map !69
 
 ST_2: stg_24 [1/1] 0.00ns
-.preheader.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap(i32* %time_stamp_V), !map !94
+.preheader.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap(i32* %time_stamp_V), !map !73
 
 ST_2: stg_25 [1/1] 0.00ns
-.preheader.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap(i6* %spk_out_stream_V_id_V), !map !98
+.preheader.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap(i6* %spk_out_stream_V_id_V), !map !77
 
 ST_2: stg_26 [1/1] 0.00ns
-.preheader.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap(i32* %spk_out_stream_V_user), !map !102
+.preheader.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap(i32* %spk_out_stream_V_user), !map !81
 
 ST_2: stg_27 [1/1] 0.00ns
-.preheader.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap(i96* %spk_out_stream_V_data_V), !map !106
+.preheader.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap(i96* %spk_out_stream_V_data_V), !map !85
 
 ST_2: stg_28 [1/1] 0.00ns
-.preheader.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %spk_out_stream_V_dest_V), !map !110
+.preheader.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %spk_out_stream_V_dest_V), !map !89
 
 ST_2: stg_29 [1/1] 0.00ns
 .preheader.preheader:13  call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @spk_packet_rx_str) nounwind
@@ -176,7 +176,7 @@ ST_2: tmp [1/2] 0.00ns
 .preheader.preheader:18  %tmp = call i1 @_ssdm_op_NbReadReq.axis.i5P.i1P.i6P.i96P(i5* %pre_in_V_user_V, i1* %pre_in_V_last, i6* %pre_in_V_id_V, i96* %pre_in_V_data_V, i32 1)
 
 ST_2: stg_35 [1/1] 0.00ns
-.preheader.preheader:19  br i1 %tmp, label %0, label %._crit_edge106
+.preheader.preheader:19  br i1 %tmp, label %0, label %._crit_edge46
 
 ST_2: empty [1/1] 0.00ns
 :0  %empty = call { i5, i1, i6, i96 } @_ssdm_op_Read.axis.volatile.i5P.i1P.i6P.i96P(i5* %pre_in_V_user_V, i1* %pre_in_V_last, i6* %pre_in_V_id_V, i96* %pre_in_V_data_V)
@@ -195,24 +195,24 @@ ST_3: tmp_data_V [1/1] 0.00ns
 ST_3: tmp_3_cast [1/1] 0.00ns
 :5  %tmp_3_cast = zext i6 %tmp_id_V_1 to i11
 
-ST_3: tmp_9 [3/3] 1.02ns
-:6  %tmp_9 = mul i11 %tmp_3_cast, 19
+ST_3: tmp_8 [3/3] 1.02ns
+:6  %tmp_8 = mul i11 %tmp_3_cast, 19
 
 
  <State 4>: 1.02ns
-ST_4: tmp_9 [2/3] 1.02ns
-:6  %tmp_9 = mul i11 %tmp_3_cast, 19
+ST_4: tmp_8 [2/3] 1.02ns
+:6  %tmp_8 = mul i11 %tmp_3_cast, 19
 
 
  <State 5>: 2.70ns
 ST_5: tmp_2_cast [1/1] 0.00ns
 :4  %tmp_2_cast = zext i5 %tmp_user_V to i11
 
-ST_5: tmp_9 [1/3] 0.00ns
-:6  %tmp_9 = mul i11 %tmp_3_cast, 19
+ST_5: tmp_8 [1/3] 0.00ns
+:6  %tmp_8 = mul i11 %tmp_3_cast, 19
 
 ST_5: tmp_s [1/1] 2.70ns
-:7  %tmp_s = add i11 %tmp_9, %tmp_2_cast
+:7  %tmp_s = add i11 %tmp_8, %tmp_2_cast
 
 
  <State 6>: 2.05ns
@@ -226,18 +226,18 @@ ST_6: stg_48 [1/1] 2.05ns
 :10  store i96 %tmp_data_V, i96* %spk_V_addr, align 16
 
 ST_6: stg_49 [1/1] 0.00ns
-:11  br label %._crit_edge106
+:11  br label %._crit_edge46
 
 ST_6: tmp_1 [2/2] 0.00ns
-._crit_edge106:0  %tmp_1 = call i1 @_ssdm_op_NbReadReq.axis.i5P.i1P.i6P.i96P(i5* %post_in_V_user_V, i1* %post_in_V_last, i6* %post_in_V_id_V, i96* %post_in_V_data_V, i32 1)
+._crit_edge46:0  %tmp_1 = call i1 @_ssdm_op_NbReadReq.axis.i5P.i1P.i6P.i96P(i5* %post_in_V_user_V, i1* %post_in_V_last, i6* %post_in_V_id_V, i96* %post_in_V_data_V, i32 1)
 
 
  <State 7>: 0.71ns
 ST_7: tmp_1 [1/2] 0.00ns
-._crit_edge106:0  %tmp_1 = call i1 @_ssdm_op_NbReadReq.axis.i5P.i1P.i6P.i96P(i5* %post_in_V_user_V, i1* %post_in_V_last, i6* %post_in_V_id_V, i96* %post_in_V_data_V, i32 1)
+._crit_edge46:0  %tmp_1 = call i1 @_ssdm_op_NbReadReq.axis.i5P.i1P.i6P.i96P(i5* %post_in_V_user_V, i1* %post_in_V_last, i6* %post_in_V_id_V, i96* %post_in_V_data_V, i32 1)
 
 ST_7: stg_52 [1/1] 0.00ns
-._crit_edge106:1  br i1 %tmp_1, label %1, label %._crit_edge107
+._crit_edge46:1  br i1 %tmp_1, label %1, label %._crit_edge47
 
 ST_7: empty_2 [1/1] 0.00ns
 :0  %empty_2 = call { i5, i1, i6, i96 } @_ssdm_op_Read.axis.volatile.i5P.i1P.i6P.i96P(i5* %post_in_V_user_V, i1* %post_in_V_last, i6* %post_in_V_id_V, i96* %post_in_V_data_V)
@@ -292,25 +292,25 @@ ST_11: stg_66 [1/1] 2.05ns
 ST_11: stg_67 [1/1] 0.00ns
 :12  br i1 %tmp_last, label %2, label %.loopexit
 
-ST_11: tmp_5 [1/1] 0.00ns
-:0  %tmp_5 = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %time_stamp_V)
+ST_11: tmp_6 [1/1] 0.00ns
+:0  %tmp_6 = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %time_stamp_V)
 
 ST_11: stg_69 [1/1] 0.89ns
 :1  br label %3
 
 
  <State 12>: 3.35ns
-ST_12: i_op_assign1 [1/1] 0.00ns
-:0  %i_op_assign1 = phi i5 [ 0, %2 ], [ %j, %3 ]
+ST_12: val_assign1 [1/1] 0.00ns
+:0  %val_assign1 = phi i5 [ 0, %2 ], [ %j, %3 ]
 
-ST_12: tmp_5_cast [1/1] 0.00ns
-:5  %tmp_5_cast = zext i5 %i_op_assign1 to i11
+ST_12: tmp_9_cast [1/1] 0.00ns
+:6  %tmp_9_cast = zext i5 %val_assign1 to i11
 
-ST_12: tmp_dest_V [1/1] 1.30ns
-:6  %tmp_dest_V = add i11 %tmp_5_cast, %tmp_2
+ST_12: tmp_4 [1/1] 1.30ns
+:7  %tmp_4 = add i11 %tmp_2, %tmp_9_cast
 
 ST_12: tmp_13_cast [1/1] 0.00ns
-:8  %tmp_13_cast = sext i11 %tmp_dest_V to i64
+:8  %tmp_13_cast = sext i11 %tmp_4 to i64
 
 ST_12: spk_V_addr_2 [1/1] 0.00ns
 :9  %spk_V_addr_2 = getelementptr [608 x i96]* @spk_V, i64 0, i64 %tmp_13_cast
@@ -319,10 +319,10 @@ ST_12: tmp_data_V_2 [2/2] 2.05ns
 :10  %tmp_data_V_2 = load i96* %spk_V_addr_2, align 16
 
 ST_12: j [1/1] 1.24ns
-:13  %j = add i5 %i_op_assign1, 1
+:13  %j = add i5 %val_assign1, 1
 
 ST_12: exitcond [1/1] 1.17ns
-:14  %exitcond = icmp eq i5 %i_op_assign1, -14
+:14  %exitcond = icmp eq i5 %val_assign1, -14
 
 ST_12: stg_78 [1/1] 0.00ns
 :15  br i1 %exitcond, label %.loopexit, label %3
@@ -335,31 +335,31 @@ ST_13: empty_3 [1/1] 0.00ns
 ST_13: stg_80 [1/1] 0.00ns
 :2  call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str2) nounwind
 
-ST_13: tmp_8 [1/1] 0.00ns
-:3  %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str2)
+ST_13: tmp_5 [1/1] 0.00ns
+:3  %tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str2)
 
 ST_13: stg_82 [1/1] 0.00ns
 :4  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_13: tmp_dest_V_1 [1/1] 0.00ns
-:7  %tmp_dest_V_1 = zext i11 %tmp_dest_V to i16
+ST_13: tmp_dest_V [1/1] 0.00ns
+:5  %tmp_dest_V = zext i5 %val_assign1 to i16
 
 ST_13: tmp_data_V_2 [1/2] 2.05ns
 :10  %tmp_data_V_2 = load i96* %spk_V_addr_2, align 16
 
 ST_13: stg_85 [1/1] 0.00ns
-:11  call void @_ssdm_op_Write.axis.volatile.i6P.i32P.i96P.i16P(i6* %spk_out_stream_V_id_V, i32* %spk_out_stream_V_user, i96* %spk_out_stream_V_data_V, i16* %spk_out_stream_V_dest_V, i6 %tmp_id_V, i32 %tmp_5, i96 %tmp_data_V_2, i16 %tmp_dest_V_1)
+:11  call void @_ssdm_op_Write.axis.volatile.i6P.i32P.i96P.i16P(i6* %spk_out_stream_V_id_V, i32* %spk_out_stream_V_user, i96* %spk_out_stream_V_data_V, i16* %spk_out_stream_V_dest_V, i6 %tmp_id_V, i32 %tmp_6, i96 %tmp_data_V_2, i16 %tmp_dest_V)
 
 ST_13: empty_4 [1/1] 0.00ns
-:12  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str2, i32 %tmp_8)
+:12  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str2, i32 %tmp_5)
 
 
  <State 14>: 0.00ns
 ST_14: stg_87 [1/1] 0.00ns
-.loopexit:0  br label %._crit_edge107
+.loopexit:0  br label %._crit_edge47
 
 ST_14: stg_88 [1/1] 0.00ns
-._crit_edge107:0  ret void
+._crit_edge47:0  ret void
 
 
 

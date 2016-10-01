@@ -723,7 +723,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_9</name>
+						<name>tmp_8</name>
 						<fileName>../spk_packet_rx.cpp</fileName>
 						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -1609,7 +1609,7 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>tmp_5</name>
+						<name>tmp_6</name>
 						<fileName>../spk_packet_rx.cpp</fileName>
 						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1692,7 +1692,7 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>i_op_assign1</name>
+						<name>val_assign1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1722,90 +1722,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>tmp_5_cast</name>
-						<fileName>../spk_packet_rx.cpp</fileName>
-						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>spk_packet_rx</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/vivado_proj/spk_packet_protocol/rx/spk_rx</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../spk_packet_rx.cpp</first>
-											<second>spk_packet_rx</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>167</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_47">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>75</id>
 						<name>tmp_dest_V</name>
-						<fileName>../spk_packet_rx.cpp</fileName>
-						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>spk_packet_rx</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/vivado_proj/spk_packet_protocol/rx/spk_rx</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../spk_packet_rx.cpp</first>
-											<second>spk_packet_rx</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>tmp.dest.V</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>168</item>
-					<item>169</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_48">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>76</id>
-						<name>tmp_dest_V_1</name>
 						<fileName>../spk_packet_rx.cpp</fileName>
 						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
 						<lineNumber>34</lineNumber>
@@ -1837,9 +1754,92 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>170</item>
+					<item>167</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_47">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>75</id>
+						<name>tmp_9_cast</name>
+						<fileName>../spk_packet_rx.cpp</fileName>
+						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>spk_packet_rx</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/vivado_proj/spk_packet_protocol/rx/spk_rx</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../spk_packet_rx.cpp</first>
+											<second>spk_packet_rx</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>168</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>76</id>
+						<name>tmp_4</name>
+						<fileName>../spk_packet_rx.cpp</fileName>
+						<fileDirectory>/vivado_proj/spk_packet_protocol/rx/spk_rx</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>spk_packet_rx</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/vivado_proj/spk_packet_protocol/rx/spk_rx</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../spk_packet_rx.cpp</first>
+											<second>spk_packet_rx</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>169</item>
+					<item>170</item>
+				</oprand_edges>
+				<opcode>add</opcode>
 			</item>
 			<item class_id_reference="9" object_id="_49">
 				<Value>
@@ -2431,7 +2431,7 @@
 				<Obj>
 					<type>3</type>
 					<id>51</id>
-					<name>._crit_edge106</name>
+					<name>._crit_edge46</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2570,7 +2570,7 @@
 				<Obj>
 					<type>3</type>
 					<id>89</id>
-					<name>._crit_edge107</name>
+					<name>._crit_edge47</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2992,14 +2992,14 @@
 			<item class_id_reference="20" object_id="_138">
 				<id>168</id>
 				<edge_type>1</edge_type>
-				<source_obj>74</source_obj>
+				<source_obj>69</source_obj>
 				<sink_obj>75</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_139">
 				<id>169</id>
 				<edge_type>1</edge_type>
 				<source_obj>59</source_obj>
-				<sink_obj>75</sink_obj>
+				<sink_obj>76</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_140">
 				<id>170</id>
@@ -3010,7 +3010,7 @@
 			<item class_id_reference="20" object_id="_141">
 				<id>171</id>
 				<edge_type>1</edge_type>
-				<source_obj>75</source_obj>
+				<source_obj>76</source_obj>
 				<sink_obj>77</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_142">
@@ -3082,7 +3082,7 @@
 			<item class_id_reference="20" object_id="_153">
 				<id>185</id>
 				<edge_type>1</edge_type>
-				<source_obj>76</source_obj>
+				<source_obj>74</source_obj>
 				<sink_obj>80</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_154">
@@ -3572,7 +3572,7 @@
 		<item>
 			<first>74</first>
 			<second>
-				<first>11</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3586,7 +3586,7 @@
 		<item>
 			<first>76</first>
 			<second>
-				<first>12</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>

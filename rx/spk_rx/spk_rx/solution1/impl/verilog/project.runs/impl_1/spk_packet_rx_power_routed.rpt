@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
-| Date             : Thu Sep 29 16:28:56 2016
+| Date             : Sat Oct  1 18:32:06 2016
 | Host             : laic-ws1 running 64-bit Ubuntu 16.04.1 LTS
 | Command          : report_power -file spk_packet_rx_power_routed.rpt -pb spk_packet_rx_power_summary_routed.pb -rpx spk_packet_rx_power_routed.rpx
 | Design           : spk_packet_rx
@@ -50,12 +50,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.000 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1109 |       --- |             --- |
-|   LUT as Logic |     0.001 |      361 |    203800 |            0.18 |
-|   Register     |    <0.001 |      655 |    407600 |            0.16 |
+| Slice Logic    |     0.002 |     1097 |       --- |             --- |
+|   LUT as Logic |     0.001 |      359 |    203800 |            0.18 |
+|   Register     |    <0.001 |      644 |    407600 |            0.16 |
 |   CARRY4       |    <0.001 |        6 |     50950 |            0.01 |
 |   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |     0.002 |      798 |       --- |             --- |
+| Signals        |     0.002 |      796 |       --- |             --- |
 | Block RAM      |     0.006 |        3 |       445 |            0.67 |
 | DSPs           |     0.001 |        2 |       840 |            0.24 |
 | Static Power   |     0.157 |          |           |                 |

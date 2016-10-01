@@ -39434,6 +39434,7 @@ class stream
 typedef ap_uint<96> ap_data;
 typedef ap_uint<6> ch_type;
 
+
 struct spk_struct{
  ap_uint<5> user; // pos
  bool last; // last
@@ -39486,7 +39487,7 @@ _ssdm_op_SpecInterface(&time_stamp, "axis", 1, 1, 0, 0, "", "", "", 0, 0, 0, 0, 
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, ""); _ssdm_SpecLoopRewind(0, "");
  out.id = ch;
     out.user = frameNo;
-    out.dest = j+19*ch;
+    out.dest = j;
     out.data = spk[ch][j];
     spk_out_stream.write(out);
    }
